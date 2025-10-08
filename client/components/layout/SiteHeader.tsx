@@ -21,7 +21,7 @@ export const SiteHeader = () => {
   }, [location.pathname]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur-lg">
+    <header className="z-50 border-b border-border/60 bg-background/90 backdrop-blur-lg lg:sticky lg:top-0">
       <div className="bg-hero-gradient text-sm text-primary-foreground">
         <div className="container flex flex-col gap-2 py-2 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-medium tracking-tight">
