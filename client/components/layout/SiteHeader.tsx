@@ -22,30 +22,6 @@ export const SiteHeader = () => {
 
   return (
     <header className="z-50 border-b border-border/60 bg-background/90 backdrop-blur-lg lg:sticky lg:top-0">
-      <div className="bg-hero-gradient text-sm text-primary-foreground">
-        <div className="container flex flex-col gap-2 py-2 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-medium tracking-tight">
-            Infinity Auditing &amp; Accounting — Trusted advisors guiding bold
-            finance decisions.
-          </p>
-          <div className="flex flex-wrap items-center gap-4 text-primary-foreground/90">
-            <a
-              href="tel:+971501234567"
-              className="flex items-center gap-2 hover:text-white"
-            >
-              <Phone className="size-4" />
-              +971 50 123 4567
-            </a>
-            <a
-              href="mailto:connect@infinityauditing.com"
-              className="flex items-center gap-2 hover:text-white"
-            >
-              <Mail className="size-4" />
-              connect@infinityauditing.com
-            </a>
-          </div>
-        </div>
-      </div>
       <div className="container flex items-center justify-between py-4">
         <Link
           to="/"
