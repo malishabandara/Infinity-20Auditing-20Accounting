@@ -14,6 +14,7 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { CountUp } from "@/components/ui/count-up";
+import { HeroCarousel } from "@/components/home/HeroCarousel";
 
 const serviceHighlights = [
   {
