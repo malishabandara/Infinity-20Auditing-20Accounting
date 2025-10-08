@@ -76,10 +76,11 @@ const About = () => {
             alt="Colleagues celebrating success over financial charts in a modern office."
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(7,23,44,0.25)_0%,rgba(13,62,120,0.55)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(7,23,44,0.45)_0%,rgba(13,62,120,0.75)_100%)]" />
+          <div className="absolute inset-0 bg-black/25" />
         </div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.2),transparent_60%)]" />
-        <div className="relative container space-y-8">
+        <div className="relative z-10 container space-y-8">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.4em] text-white/80">
             About Infinity
           </span>
