@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import {
   ArrowRight,
   Calculator,
@@ -12,6 +13,8 @@ import {
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { CountUp } from "@/components/ui/count-up";
+import { HeroCarousel } from "@/components/home/HeroCarousel";
 
 const serviceHighlights = [
   {
@@ -111,7 +114,7 @@ const stats = [
 export default function Index() {
   return (
     <div className="flex flex-col gap-0">
-      <section className="relative overflow-hidden bg-hero-gradient pb-28 pt-32 text-white">
+      <section className="relative overflow-hidden bg-hero-gradient pb-32 pt-32 text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.22),transparent_60%),radial-gradient(circle_at_bottom_right,_rgba(7,23,44,0.55),transparent_70%)]" />
         <div className="relative container grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-8">
@@ -194,15 +197,8 @@ export default function Index() {
             </div>
           </div>
           <div className="relative">
-            <div className="relative overflow-hidden rounded-[32px] border border-white/20 bg-white/10 shadow-[0_35px_70px_-35px_rgba(0,0,0,0.4)]">
-              <img
-                src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1100&q=80"
-                alt="Finance professionals reviewing audit reports"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(7,23,44,0.15)_0%,rgba(13,62,120,0.45)_100%)]" />
-            </div>
-            <div className="absolute -bottom-10 left-1/2 w-full max-w-sm -translate-x-1/2 rounded-3xl bg-white p-6 shadow-soft">
+            <HeroCarousel />
+            <div className="absolute bottom-0 left-1/2 z-10 w-full max-w-sm -translate-x-1/2 rounded-3xl bg-white p-6 shadow-soft">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">
@@ -241,13 +237,17 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="container -mt-16 grid gap-4 rounded-[28px] bg-white p-8 shadow-soft sm:grid-cols-2 lg:grid-cols-4">
+      <section className="container mt-8 grid gap-4 rounded-[28px] bg-white p-8 shadow-soft sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat) => (
           <div
             key={stat.label}
             className="rounded-2xl border border-border/60 bg-gradient-to-br from-background to-secondary/30 p-6"
           >
-            <p className="text-3xl font-bold text-primary">{stat.value}</p>
+            <CountUp
+              value={stat.value}
+              duration={1.8}
+              className="text-3xl font-bold text-primary"
+            />
             <p className="mt-2 text-sm font-medium text-muted-foreground">
               {stat.label}
             </p>
