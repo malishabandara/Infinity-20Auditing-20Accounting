@@ -1,12 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import {
-  Mail,
-  Menu,
-  MessageCircle,
-  Phone,
-  X,
-} from "lucide-react";
+import { Mail, Menu, MessageCircle, Phone, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -89,7 +83,11 @@ export const SiteHeader = () => {
         </nav>
         <div className="hidden items-center gap-3 lg:flex">
           <Button variant="outline" asChild>
-            <a href="https://wa.me/971501234567" target="_blank" rel="noreferrer">
+            <a
+              href="https://wa.me/971501234567"
+              target="_blank"
+              rel="noreferrer"
+            >
               <MessageCircle className="size-4" />
               WhatsApp Us
             </a>
@@ -110,7 +108,9 @@ export const SiteHeader = () => {
       <div
         className={cn(
           "lg:hidden",
-          mobileOpen ? "block border-t border-border/70 bg-background/95" : "hidden",
+          mobileOpen
+            ? "block border-t border-border/70 bg-background/95"
+            : "hidden",
         )}
       >
         <nav className="container flex flex-col gap-4 py-6 text-base font-semibold">
@@ -132,7 +132,11 @@ export const SiteHeader = () => {
           ))}
           <div className="flex flex-col gap-3 border-t border-border/80 pt-4">
             <Button variant="outline" asChild className="justify-center">
-              <a href="https://wa.me/971501234567" target="_blank" rel="noreferrer">
+              <a
+                href="https://wa.me/971501234567"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <MessageCircle className="size-4" />
                 WhatsApp Us
               </a>

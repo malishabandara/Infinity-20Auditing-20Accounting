@@ -76,11 +76,12 @@ const About = () => {
             About Infinity
           </span>
           <h1 className="max-w-3xl text-4xl font-bold leading-tight sm:text-5xl">
-            Trusted auditors, strategic partners, and advocates for financial clarity.
+            Trusted auditors, strategic partners, and advocates for financial
+            clarity.
           </h1>
           <p className="max-w-3xl text-lg text-white/85">
-            Infinity Auditing &amp; Accounting has guided organisations across the
-            UAE for nearly two decades. Our philosophy is simple: combine
+            Infinity Auditing &amp; Accounting has guided organisations across
+            the UAE for nearly two decades. Our philosophy is simple: combine
             uncompromising governance with insights that enable bold business
             moves. Every engagement is partner-led, data-informed, and grounded
             in international best practice.
@@ -102,15 +103,18 @@ const About = () => {
                 propel sustained growth.
               </p>
               <p>
-                Every consultant at Infinity commits to responsive communication,
-                clarity of analysis, and meticulous execution. Clients choose us
-                for our agility, sector awareness, and unwavering commitment to
-                independence.
+                Every consultant at Infinity commits to responsive
+                communication, clarity of analysis, and meticulous execution.
+                Clients choose us for our agility, sector awareness, and
+                unwavering commitment to independence.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
               {values.map(({ title, description, icon: Icon }) => (
-                <div key={title} className="rounded-2xl border border-border/70 bg-white p-6 shadow-soft">
+                <div
+                  key={title}
+                  className="rounded-2xl border border-border/70 bg-white p-6 shadow-soft"
+                >
                   <Icon className="size-6 text-primary" />
                   <h3 className="mt-4 text-lg font-semibold text-foreground">
                     {title}
@@ -151,7 +155,10 @@ const About = () => {
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
             {milestones.map((milestone) => (
-              <div key={milestone.year} className="rounded-3xl border border-border/60 bg-white p-8 shadow-soft">
+              <div
+                key={milestone.year}
+                className="rounded-3xl border border-border/60 bg-white p-8 shadow-soft"
+              >
                 <p className="text-sm font-semibold uppercase tracking-[0.4em] text-muted-foreground">
                   {milestone.year}
                 </p>
@@ -179,7 +186,10 @@ const About = () => {
         </div>
         <div className="grid gap-8 lg:grid-cols-3">
           {leadership.map((leader) => (
-            <div key={leader.name} className="rounded-[26px] border border-border/70 bg-white p-8 text-center shadow-soft">
+            <div
+              key={leader.name}
+              className="rounded-[26px] border border-border/70 bg-white p-8 text-center shadow-soft"
+            >
               <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-lg font-semibold text-primary">
                 {leader.name
                   .split(" ")

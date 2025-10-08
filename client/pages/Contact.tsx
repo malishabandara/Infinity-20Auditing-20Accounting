@@ -150,7 +150,9 @@ const Contact = () => {
                       <p className="text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground">
                         {label}
                       </p>
-                      <p className="text-sm font-medium text-foreground">{value}</p>
+                      <p className="text-sm font-medium text-foreground">
+                        {value}
+                      </p>
                     </div>
                   </a>
                 </li>

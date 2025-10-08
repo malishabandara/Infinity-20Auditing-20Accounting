@@ -26,14 +26,22 @@ const serviceHighlights = [
     description:
       "Navigate UAE corporate tax, VAT, and cross-border regulation with confidence.",
     icon: Calculator,
-    features: ["Corporate Tax Planning", "VAT Registration & Filing", "Tax Health Checks"],
+    features: [
+      "Corporate Tax Planning",
+      "VAT Registration & Filing",
+      "Tax Health Checks",
+    ],
   },
   {
     title: "Accounting & CFO",
     description:
       "Outsourced finance teams delivering accurate reporting and actionable insights.",
     icon: LineChart,
-    features: ["Bookkeeping Automation", "CFO as a Service", "Management Reporting"],
+    features: [
+      "Bookkeeping Automation",
+      "CFO as a Service",
+      "Management Reporting",
+    ],
   },
 ];
 
@@ -123,7 +131,11 @@ export default function Index() {
             </div>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
               <div className="flex items-center gap-3">
-                <Button asChild size="lg" className="shadow-lg shadow-primary/40">
+                <Button
+                  asChild
+                  size="lg"
+                  className="shadow-lg shadow-primary/40"
+                >
                   <Link to="/contact">
                     Schedule Consultation
                     <ArrowRight className="size-4" />
@@ -135,13 +147,18 @@ export default function Index() {
                   variant="outline"
                   className="border-white/60 bg-white/10 text-white hover:bg-white/20 hover:text-white"
                 >
-                  <a href="https://wa.me/971501234567" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://wa.me/971501234567"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     WhatsApp Advisory
                   </a>
                 </Button>
               </div>
               <p className="text-sm text-white/75">
-                Or call us directly at <span className="font-semibold">+971 50 123 4567</span>
+                Or call us directly at{" "}
+                <span className="font-semibold">+971 50 123 4567</span>
               </p>
             </div>
             <div className="grid max-w-xl gap-5 sm:grid-cols-2">
@@ -191,7 +208,9 @@ export default function Index() {
                   <p className="text-sm font-medium text-muted-foreground">
                     Continuous Monitoring
                   </p>
-                  <p className="text-2xl font-bold text-primary">Live Compliance Index</p>
+                  <p className="text-2xl font-bold text-primary">
+                    Live Compliance Index
+                  </p>
                 </div>
                 <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
                   99.3%
@@ -199,15 +218,21 @@ export default function Index() {
               </div>
               <div className="mt-4 space-y-3">
                 <div className="flex items-center justify-between text-sm">
-                  <span className="font-medium text-foreground">Audit Queries</span>
+                  <span className="font-medium text-foreground">
+                    Audit Queries
+                  </span>
                   <span className="text-primary">Resolved in 24h</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
-                  <span className="font-medium text-foreground">Tax Filings</span>
+                  <span className="font-medium text-foreground">
+                    Tax Filings
+                  </span>
                   <span className="text-primary">100% On Time</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
-                  <span className="font-medium text-foreground">Finance KPIs</span>
+                  <span className="font-medium text-foreground">
+                    Finance KPIs
+                  </span>
                   <span className="text-primary">+28% Accuracy</span>
                 </div>
               </div>
@@ -218,7 +243,10 @@ export default function Index() {
 
       <section className="container -mt-16 grid gap-4 rounded-[28px] bg-white p-8 shadow-soft sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat) => (
-          <div key={stat.label} className="rounded-2xl border border-border/60 bg-gradient-to-br from-background to-secondary/30 p-6">
+          <div
+            key={stat.label}
+            className="rounded-2xl border border-border/60 bg-gradient-to-br from-background to-secondary/30 p-6"
+          >
             <p className="text-3xl font-bold text-primary">{stat.value}</p>
             <p className="mt-2 text-sm font-medium text-muted-foreground">
               {stat.label}
@@ -241,39 +269,46 @@ export default function Index() {
           </p>
         </div>
         <div className="grid gap-8 lg:grid-cols-3">
-          {serviceHighlights.map(({ title, description, icon: Icon, features }) => (
-            <div
-              key={title}
-              className="group relative overflow-hidden rounded-[26px] border border-border/70 bg-white p-8 shadow-soft transition hover:-translate-y-1"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-gradient-start/0 via-gradient-start/0 to-gradient-end/5 opacity-0 transition duration-500 group-hover:opacity-100" />
-              <div className="relative space-y-6">
-                <div className="inline-flex rounded-full bg-primary/10 p-3 text-primary">
-                  <Icon className="size-6" />
+          {serviceHighlights.map(
+            ({ title, description, icon: Icon, features }) => (
+              <div
+                key={title}
+                className="group relative overflow-hidden rounded-[26px] border border-border/70 bg-white p-8 shadow-soft transition hover:-translate-y-1"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-gradient-start/0 via-gradient-start/0 to-gradient-end/5 opacity-0 transition duration-500 group-hover:opacity-100" />
+                <div className="relative space-y-6">
+                  <div className="inline-flex rounded-full bg-primary/10 p-3 text-primary">
+                    <Icon className="size-6" />
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-2xl font-semibold text-foreground">
+                      {title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      {description}
+                    </p>
+                  </div>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    {features.map((feature) => (
+                      <li
+                        key={feature}
+                        className="flex items-center gap-2 text-foreground/80"
+                      >
+                        <CheckCircle2 className="size-4 text-primary" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <Button variant="ghost" className="px-0 text-primary" asChild>
+                    <Link to="/services">
+                      Explore capability
+                      <ArrowRight className="size-4" />
+                    </Link>
+                  </Button>
                 </div>
-                <div className="space-y-3">
-                  <h3 className="text-2xl font-semibold text-foreground">{title}</h3>
-                  <p className="text-sm leading-relaxed text-muted-foreground">
-                    {description}
-                  </p>
-                </div>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  {features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-foreground/80">
-                      <CheckCircle2 className="size-4 text-primary" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <Button variant="ghost" className="px-0 text-primary" asChild>
-                  <Link to="/services">
-                    Explore capability
-                    <ArrowRight className="size-4" />
-                  </Link>
-                </Button>
               </div>
-            </div>
-          ))}
+            ),
+          )}
         </div>
       </section>
 
@@ -285,8 +320,8 @@ export default function Index() {
               Audit intelligence engineered for growth
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-white/80">
-              Structured delivery frameworks keep your finance operations resilient
-              while uncovering efficiencies and opportunities.
+              Structured delivery frameworks keep your finance operations
+              resilient while uncovering efficiencies and opportunities.
             </p>
           </div>
           <div className="grid gap-8 lg:grid-cols-3">
@@ -317,7 +352,8 @@ export default function Index() {
               Why Infinity
             </span>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Trusted partners delivering clarity across every financial touchpoint
+              Trusted partners delivering clarity across every financial
+              touchpoint
             </h2>
             <p className="text-lg text-muted-foreground">
               We embed alongside your finance stakeholders, streamline reporting
@@ -327,7 +363,10 @@ export default function Index() {
             </p>
             <div className="grid gap-6 sm:grid-cols-2">
               {valuePillars.map(({ title, description, icon: Icon }) => (
-                <div key={title} className="rounded-2xl border border-border/70 bg-white p-6 shadow-soft">
+                <div
+                  key={title}
+                  className="rounded-2xl border border-border/70 bg-white p-6 shadow-soft"
+                >
                   <Icon className="size-6 text-primary" />
                   <h3 className="mt-4 text-lg font-semibold text-foreground">
                     {title}
@@ -343,8 +382,8 @@ export default function Index() {
             <div className="absolute -top-10 -right-10 h-36 w-36 rounded-full bg-gradient-to-br from-gradient-start/40 to-gradient-end/40" />
             <div className="relative space-y-6">
               <h3 className="text-2xl font-bold text-foreground">
-                "Infinity Auditing transformed our reporting cadence and uncovered
-                strategic tax savings within three quarters."
+                "Infinity Auditing transformed our reporting cadence and
+                uncovered strategic tax savings within three quarters."
               </h3>
               <p className="text-sm font-medium uppercase tracking-[0.3em] text-muted-foreground">
                 CFO, Regional Retail Group
@@ -374,8 +413,8 @@ export default function Index() {
             Trusted by finance leaders across the UAE
           </h2>
           <p className="mx-auto max-w-2xl text-sm text-muted-foreground">
-            Mid-market groups, family offices, and high-growth innovators rely on
-            Infinity Auditing &amp; Accounting to navigate complex regulatory
+            Mid-market groups, family offices, and high-growth innovators rely
+            on Infinity Auditing &amp; Accounting to navigate complex regulatory
             mandates.
           </p>
         </div>

@@ -1,4 +1,11 @@
-import { ArrowRight, BarChart3, CheckCircle2, FileSignature, LineChart, ShieldCheck } from "lucide-react";
+import {
+  ArrowRight,
+  BarChart3,
+  CheckCircle2,
+  FileSignature,
+  LineChart,
+  ShieldCheck,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 import { Button } from "@/components/ui/button";
@@ -104,25 +111,37 @@ const Services = () => {
       <section className="container space-y-12 py-24">
         <div className="grid gap-10 lg:grid-cols-3">
           {services.map(({ title, description, deliverables, icon: Icon }) => (
-            <div key={title} className="flex h-full flex-col gap-6 rounded-[28px] border border-border/70 bg-white p-8 shadow-soft">
+            <div
+              key={title}
+              className="flex h-full flex-col gap-6 rounded-[28px] border border-border/70 bg-white p-8 shadow-soft"
+            >
               <div className="inline-flex rounded-full bg-primary/10 p-3 text-primary">
                 <Icon className="size-6" />
               </div>
               <div className="space-y-3">
-                <h2 className="text-2xl font-semibold text-foreground">{title}</h2>
+                <h2 className="text-2xl font-semibold text-foreground">
+                  {title}
+                </h2>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   {description}
                 </p>
               </div>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 {deliverables.map((deliverable) => (
-                  <li key={deliverable} className="flex items-start gap-2 text-foreground/80">
+                  <li
+                    key={deliverable}
+                    className="flex items-start gap-2 text-foreground/80"
+                  >
                     <CheckCircle2 className="mt-1 size-4 text-primary" />
                     <span>{deliverable}</span>
                   </li>
                 ))}
               </ul>
-              <Button variant="ghost" asChild className="mt-auto w-fit px-0 text-primary">
+              <Button
+                variant="ghost"
+                asChild
+                className="mt-auto w-fit px-0 text-primary"
+              >
                 <Link to="/contact">
                   Start conversation
                   <ArrowRight className="size-4" />
@@ -140,13 +159,16 @@ const Services = () => {
               How we partner with your finance team
             </h2>
             <p className="mt-4 text-base text-muted-foreground">
-              Every engagement follows a proven framework ensuring clarity, agility,
-              and confidence from day one.
+              Every engagement follows a proven framework ensuring clarity,
+              agility, and confidence from day one.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {approach.map((step, index) => (
-              <div key={step.title} className="rounded-3xl border border-border/70 bg-white p-6 text-center shadow-soft">
+              <div
+                key={step.title}
+                className="rounded-3xl border border-border/70 bg-white p-6 text-center shadow-soft"
+              >
                 <span className="text-sm font-semibold uppercase tracking-[0.4em] text-primary">
                   Step {index + 1}
                 </span>
@@ -174,7 +196,10 @@ const Services = () => {
             </p>
             <div className="space-y-4">
               {accelerators.map((accelerator) => (
-                <div key={accelerator.title} className="rounded-2xl border border-border/70 bg-white p-5 shadow-soft">
+                <div
+                  key={accelerator.title}
+                  className="rounded-2xl border border-border/70 bg-white p-5 shadow-soft"
+                >
                   <BarChart3 className="size-5 text-primary" />
                   <h3 className="mt-3 text-lg font-semibold text-foreground">
                     {accelerator.title}
@@ -192,8 +217,7 @@ const Services = () => {
             </h3>
             <p className="mt-3 text-sm text-white/80">
               Receive a comprehensive assessment covering controls, reporting,
-              compliance, and systems adoption with prioritised
-              recommendations.
+              compliance, and systems adoption with prioritised recommendations.
             </p>
             <ul className="mt-6 space-y-3 text-sm text-white/90">
               <li className="flex items-start gap-2">
@@ -210,7 +234,12 @@ const Services = () => {
                 Technology enablement roadmap tailored to your finance stack.
               </li>
             </ul>
-            <Button size="lg" variant="secondary" asChild className="mt-8 bg-white text-primary hover:bg-white/90">
+            <Button
+              size="lg"
+              variant="secondary"
+              asChild
+              className="mt-8 bg-white text-primary hover:bg-white/90"
+            >
               <Link to="/contact">
                 Request diagnostic
                 <ArrowRight className="size-4" />
