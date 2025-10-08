@@ -196,14 +196,7 @@ export default function Index() {
             </div>
           </div>
           <div className="relative">
-            <div className="relative z-0 overflow-hidden rounded-[32px] border border-white/20 bg-white/10 shadow-[0_35px_70px_-35px_rgba(0,0,0,0.4)]">
-              <img
-                src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1100&q=80"
-                alt="Finance professionals reviewing audit reports"
-                className="h-full w-full object-cover"
-              />
-              <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(7,23,44,0.15)_0%,rgba(13,62,120,0.45)_100%)]" />
-            </div>
+            <HeroCarousel />
             <div className="absolute bottom-0 left-1/2 z-10 w-full max-w-sm -translate-x-1/2 rounded-3xl bg-white p-6 shadow-soft">
               <div className="flex items-start justify-between gap-4">
                 <div>
