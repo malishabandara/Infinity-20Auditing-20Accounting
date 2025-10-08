@@ -114,9 +114,9 @@ const stats = [
 export default function Index() {
   return (
     <div className="flex flex-col gap-0">
-      <section className="relative overflow-hidden bg-hero-gradient pb-32 pt-32 text-white">
+      <section className="relative overflow-hidden bg-hero-gradient py-20 text-white sm:py-24 lg:py-32">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.22),transparent_60%),radial-gradient(circle_at_bottom_right,_rgba(7,23,44,0.55),transparent_70%)]" />
-        <div className="relative container grid items-center gap-16 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="relative container grid items-center gap-12 md:gap-16 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-8">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-white/90 ring-1 ring-white/40">
               Precision. Clarity. Confidence.
@@ -133,11 +133,11 @@ export default function Index() {
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-              <div className="flex items-center gap-3">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Button
                   asChild
                   size="lg"
-                  className="shadow-lg shadow-primary/40"
+                  className="w-full sm:w-auto shadow-lg shadow-primary/40"
                 >
                   <Link to="/contact">
                     Schedule Consultation
@@ -148,7 +148,7 @@ export default function Index() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="border-white/60 bg-white/10 text-white hover:bg-white/20 hover:text-white"
+                  className="w-full sm:w-auto border-white/60 bg-white/10 text-white hover:bg-white/20 hover:text-white"
                 >
                   <a
                     href="https://wa.me/971501234567"
@@ -198,7 +198,7 @@ export default function Index() {
           </div>
           <div className="relative">
             <HeroCarousel />
-            <div className="absolute bottom-0 left-1/2 z-10 w-full max-w-sm -translate-x-1/2 rounded-3xl bg-white p-6 shadow-soft">
+            <div className="z-10 w-full max-w-sm mx-auto mt-4 rounded-3xl bg-white p-6 shadow-soft md:absolute md:bottom-0 md:left-1/2 md:-translate-x-1/2 md:mt-0">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">
