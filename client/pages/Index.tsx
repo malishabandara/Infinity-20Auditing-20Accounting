@@ -243,7 +243,11 @@ export default function Index() {
             key={stat.label}
             className="rounded-2xl border border-border/60 bg-gradient-to-br from-background to-secondary/30 p-6"
           >
-            <CountUp value={stat.value} duration={1.8} className="text-3xl font-bold text-primary" />
+            <CountUp
+              value={stat.value}
+              duration={1.8}
+              className="text-3xl font-bold text-primary"
+            />
             <p className="mt-2 text-sm font-medium text-muted-foreground">
               {stat.label}
             </p>

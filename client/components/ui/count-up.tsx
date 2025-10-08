@@ -12,11 +12,14 @@ function useInView<T extends HTMLElement>(options?: IntersectionObserverInit) {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) setInView(true);
-      });
-    }, options ?? { threshold: 0.2 });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setInView(true);
+        });
+      },
+      options ?? { threshold: 0.2 },
+    );
 
     observer.observe(el);
     return () => observer.disconnect();
@@ -30,7 +33,12 @@ export interface CountUpProps extends React.HTMLAttributes<HTMLSpanElement> {
   duration?: number; // seconds
 }
 
-export function CountUp({ value, duration = 1.6, className, ...rest }: CountUpProps) {
+export function CountUp({
+  value,
+  duration = 1.6,
+  className,
+  ...rest
+}: CountUpProps) {
   const { prefix, number, suffix, decimals } = useMemo(() => {
     const str = String(value).trim();
     const match = str.match(/^([^\d.-]*)(-?\d+(?:[\.,]\d+)?)(.*)$/);
@@ -38,7 +46,12 @@ export function CountUp({ value, duration = 1.6, className, ...rest }: CountUpPr
     const raw = match[2].replace(",", ".");
     const num = parseFloat(raw);
     const dec = raw.includes(".") ? raw.split(".")[1].length : 0;
-    return { prefix: match[1] ?? "", number: isNaN(num) ? 0 : num, suffix: match[3] ?? "", decimals: dec };
+    return {
+      prefix: match[1] ?? "",
+      number: isNaN(num) ? 0 : num,
+      suffix: match[3] ?? "",
+      decimals: dec,
+    };
   }, [value]);
 
   const { ref, inView } = useInView<HTMLSpanElement>({ threshold: 0.25 });
