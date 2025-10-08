@@ -91,6 +91,14 @@ const Services = () => {
   return (
     <div className="flex flex-col">
       <section className="relative overflow-hidden bg-hero-gradient pb-24 pt-32 text-white">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.pexels.com/photos/6779567/pexels-photo-6779567.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Professionals analyzing financial documents and reports with a calculator."
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(7,23,44,0.25)_0%,rgba(13,62,120,0.55)_100%)]" />
+        </div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(255,255,255,0.18),transparent_60%)]" />
         <div className="relative container space-y-6">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1 text-xs font-semibold uppercase tracking-[0.4em] text-white/80">
