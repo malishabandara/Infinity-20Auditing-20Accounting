@@ -47,15 +47,9 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        gradient: {
+          start: "hsl(var(--gradient-start))",
+          end: "hsl(var(--gradient-end))",
         },
       },
       borderRadius: {
@@ -84,6 +78,19 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      backgroundImage: {
+        "hero-gradient":
+          "linear-gradient(135deg, hsl(var(--gradient-start)) 0%, hsl(var(--gradient-end)) 100%)",
+        "section-gradient":
+          "linear-gradient(160deg, hsla(var(--gradient-start),0.92) 0%, hsla(var(--gradient-end),0.85) 100%)",
+      },
+      boxShadow: {
+        soft: "0 24px 60px -28px rgba(15, 52, 96, 0.48)",
+      },
+      fontFamily: {
+        sans: ["Manrope", "Inter", "sans-serif"],
+        display: ["Manrope", "Inter", "sans-serif"],
       },
     },
   },
