@@ -83,7 +83,7 @@ export default {
         "hero-gradient":
           "linear-gradient(135deg, hsl(var(--gradient-start)) 0%, hsl(var(--gradient-end)) 100%)",
         "section-gradient":
-          "linear-gradient(160deg, hsla(var(--gradient-start),0.92) 0%, hsla(var(--gradient-end),0.85) 100%)",
+          "linear-gradient(160deg, hsl(var(--gradient-start) / 0.92) 0%, hsl(var(--gradient-end) / 0.85) 100%)",
       },
       boxShadow: {
         soft: "0 24px 60px -28px rgba(15, 52, 96, 0.48)",
