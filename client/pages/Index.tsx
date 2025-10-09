@@ -118,8 +118,8 @@ export default function Index() {
         <BackgroundSlideshow />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.22),transparent_60%),radial-gradient(circle_at_bottom_right,_rgba(7,23,44,0.55),transparent_70%)]" />
         <div className="relative container grid min-h-[72vh] items-center gap-8 sm:gap-10 lg:gap-12 py-16 sm:py-20 lg:py-24">
-          <div className="space-y-8">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-white/90 ring-1 ring-white/40">
+          <div className="mx-auto max-w-3xl space-y-8 text-center">
+            <span className="mx-auto inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-white/90 ring-1 ring-white/40">
               Precision. Clarity. Confidence.
             </span>
             <div className="space-y-6">
@@ -133,8 +133,8 @@ export default function Index() {
                 finance into a strategic advantage.
               </p>
             </div>
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center justify-center">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center justify-center">
                 <Button
                   asChild
                   size="lg"
@@ -165,7 +165,7 @@ export default function Index() {
                 <span className="font-semibold">+971 50 123 4567</span>
               </p>
             </div>
-            <div className="grid max-w-xl gap-5 sm:grid-cols-2">
+            <div className="grid max-w-xl mx-auto gap-5 sm:grid-cols-2">
               <div className="rounded-2xl bg-white/10 p-5 ring-1 ring-white/20">
                 <p className="text-xs uppercase tracking-[0.25em] text-white/65">
                   Featured Insight
