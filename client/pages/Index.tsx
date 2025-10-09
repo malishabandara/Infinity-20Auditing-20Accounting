@@ -277,6 +277,7 @@ export default function Index() {
 
       <section className="relative overflow-hidden py-24">
         <div className="absolute inset-0 bg-section-gradient" />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="relative container space-y-12 text-white">
           <div className="flex flex-col gap-4 text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
