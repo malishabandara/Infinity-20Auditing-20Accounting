@@ -14,7 +14,7 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { CountUp } from "@/components/ui/count-up";
-import { HeroCarousel } from "@/components/home/HeroCarousel";
+import { BackgroundSlideshow } from "@/components/home/BackgroundSlideshow";
 
 const serviceHighlights = [
   {
@@ -114,11 +114,12 @@ const stats = [
 export default function Index() {
   return (
     <div className="flex flex-col gap-0">
-      <section className="relative overflow-hidden bg-hero-gradient py-20 text-white sm:py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-hero-gradient text-white">
+        <BackgroundSlideshow />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.22),transparent_60%),radial-gradient(circle_at_bottom_right,_rgba(7,23,44,0.55),transparent_70%)]" />
-        <div className="relative container grid items-center gap-12 md:gap-16 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-8">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-white/90 ring-1 ring-white/40">
+        <div className="relative container grid min-h-[72vh] items-center gap-8 sm:gap-10 lg:gap-12 py-16 sm:py-20 lg:py-24">
+          <div className="mx-auto max-w-3xl space-y-8 text-center">
+            <span className="mx-auto inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-white/90 ring-1 ring-white/40">
               Precision. Clarity. Confidence.
             </span>
             <div className="space-y-6">
@@ -132,8 +133,8 @@ export default function Index() {
                 finance into a strategic advantage.
               </p>
             </div>
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center justify-center">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center justify-center">
                 <Button
                   asChild
                   size="lg"
@@ -164,7 +165,7 @@ export default function Index() {
                 <span className="font-semibold">+971 50 123 4567</span>
               </p>
             </div>
-            <div className="grid max-w-xl gap-5 sm:grid-cols-2">
+            <div className="grid max-w-xl mx-auto gap-5 sm:grid-cols-2">
               <div className="rounded-2xl bg-white/10 p-5 ring-1 ring-white/20">
                 <p className="text-xs uppercase tracking-[0.25em] text-white/65">
                   Featured Insight
@@ -196,48 +197,10 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <div className="relative">
-            <HeroCarousel />
-            <div className="z-10 w-full max-w-sm mx-auto mt-4 rounded-3xl bg-white p-6 shadow-soft md:absolute md:bottom-0 md:left-1/2 md:-translate-x-1/2 md:mt-0">
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">
-                    Continuous Monitoring
-                  </p>
-                  <p className="text-2xl font-bold text-primary">
-                    Live Compliance Index
-                  </p>
-                </div>
-                <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
-                  99.3%
-                </span>
-              </div>
-              <div className="mt-4 space-y-3">
-                <div className="flex items-center justify-between text-sm">
-                  <span className="font-medium text-foreground">
-                    Audit Queries
-                  </span>
-                  <span className="text-primary">Resolved in 24h</span>
-                </div>
-                <div className="flex items-center justify-between text-sm">
-                  <span className="font-medium text-foreground">
-                    Tax Filings
-                  </span>
-                  <span className="text-primary">100% On Time</span>
-                </div>
-                <div className="flex items-center justify-between text-sm">
-                  <span className="font-medium text-foreground">
-                    Finance KPIs
-                  </span>
-                  <span className="text-primary">+28% Accuracy</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section className="container mt-8 grid gap-4 rounded-[28px] bg-white p-8 shadow-soft sm:grid-cols-2 lg:grid-cols-4">
+      <section className="container mt-8 grid gap-4 rounded-[28px] bg-card p-8 shadow-soft sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat) => (
           <div
             key={stat.label}
@@ -273,7 +236,7 @@ export default function Index() {
             ({ title, description, icon: Icon, features }) => (
               <div
                 key={title}
-                className="group relative overflow-hidden rounded-[26px] border border-border/70 bg-white p-8 shadow-soft transition hover:-translate-y-1"
+                className="group relative overflow-hidden rounded-[26px] border border-border/70 bg-card p-8 shadow-soft transition hover:-translate-y-1"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-gradient-start/0 via-gradient-start/0 to-gradient-end/5 opacity-0 transition duration-500 group-hover:opacity-100" />
                 <div className="relative space-y-6">
@@ -313,7 +276,15 @@ export default function Index() {
       </section>
 
       <section className="relative overflow-hidden py-24">
-        <div className="absolute inset-0 bg-section-gradient" />
+        <div className="absolute inset-0">
+          <img
+            src="https://images.pexels.com/photos/6779567/pexels-photo-6779567.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Professionals analyzing financial documents and reports with a calculator."
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(7,23,44,0.45)_0%,rgba(13,62,120,0.75)_100%)]" />
+        <div className="absolute inset-0 bg-black/30" />
         <div className="relative container space-y-12 text-white">
           <div className="flex flex-col gap-4 text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -365,7 +336,7 @@ export default function Index() {
               {valuePillars.map(({ title, description, icon: Icon }) => (
                 <div
                   key={title}
-                  className="rounded-2xl border border-border/70 bg-white p-6 shadow-soft"
+                  className="rounded-2xl border border-border/70 bg-card p-6 shadow-soft"
                 >
                   <Icon className="size-6 text-primary" />
                   <h3 className="mt-4 text-lg font-semibold text-foreground">
@@ -378,7 +349,7 @@ export default function Index() {
               ))}
             </div>
           </div>
-          <div className="relative isolate overflow-hidden rounded-[30px] bg-gradient-to-br from-white via-white to-secondary/60 p-10 shadow-soft">
+          <div className="relative isolate overflow-hidden rounded-[30px] bg-gradient-to-br from-card via-card to-secondary/60 p-10 shadow-soft">
             <div className="absolute -top-10 -right-10 h-36 w-36 rounded-full bg-gradient-to-br from-gradient-start/40 to-gradient-end/40" />
             <div className="relative space-y-6">
               <h3 className="text-2xl font-bold text-foreground">
@@ -432,7 +403,7 @@ export default function Index() {
 
       <section className="relative overflow-hidden py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/30" />
-        <div className="relative container flex flex-col gap-8 rounded-[30px] border border-border/70 bg-white/80 p-10 text-center shadow-soft backdrop-blur lg:flex-row lg:items-center lg:text-left">
+        <div className="relative container flex flex-col gap-8 rounded-[30px] border border-border/70 bg-card/80 p-10 text-center shadow-soft backdrop-blur lg:flex-row lg:items-center lg:text-left">
           <div className="flex-1 space-y-4">
             <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary">
               Ready When You Are

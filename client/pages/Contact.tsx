@@ -52,7 +52,7 @@ const Contact = () => {
 
       <section className="container grid gap-12 py-24 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="space-y-8">
-          <div className="rounded-[28px] border border-border/70 bg-white p-8 shadow-soft">
+          <div className="rounded-[28px] border border-border/70 bg-card p-8 shadow-soft">
             <h2 className="text-2xl font-semibold text-foreground">
               Submit your enquiry
             </h2>
@@ -139,7 +139,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex flex-col gap-8">
-          <div className="rounded-[28px] border border-border/70 bg-white p-8 shadow-soft">
+          <div className="rounded-[28px] border border-border/70 bg-card p-8 shadow-soft">
             <h2 className="text-2xl font-semibold text-foreground">
               Connect directly
             </h2>
@@ -168,7 +168,7 @@ const Contact = () => {
               ))}
             </ul>
           </div>
-          <div className="rounded-[28px] border border-border/70 bg-white p-8 shadow-soft">
+          <div className="rounded-[28px] border border-border/70 bg-card p-8 shadow-soft">
             <h2 className="text-xl font-semibold text-foreground">
               Visit our head office
             </h2>

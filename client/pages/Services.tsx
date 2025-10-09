@@ -122,7 +122,7 @@ const Services = () => {
           {services.map(({ title, description, deliverables, icon: Icon }) => (
             <div
               key={title}
-              className="flex h-full flex-col gap-6 rounded-[28px] border border-border/70 bg-white p-8 shadow-soft"
+              className="flex h-full flex-col gap-6 rounded-[28px] border border-border/70 bg-card p-8 shadow-soft"
             >
               <div className="inline-flex rounded-full bg-primary/10 p-3 text-primary">
                 <Icon className="size-6" />
@@ -176,7 +176,7 @@ const Services = () => {
             {approach.map((step, index) => (
               <div
                 key={step.title}
-                className="rounded-3xl border border-border/70 bg-white p-6 text-center shadow-soft"
+                className="rounded-3xl border border-border/70 bg-card p-6 text-center shadow-soft"
               >
                 <span className="text-sm font-semibold uppercase tracking-[0.4em] text-primary">
                   Step {index + 1}
@@ -207,7 +207,7 @@ const Services = () => {
               {accelerators.map((accelerator) => (
                 <div
                   key={accelerator.title}
-                  className="rounded-2xl border border-border/70 bg-white p-5 shadow-soft"
+                  className="rounded-2xl border border-border/70 bg-card p-5 shadow-soft"
                 >
                   <BarChart3 className="size-5 text-primary" />
                   <h3 className="mt-3 text-lg font-semibold text-foreground">

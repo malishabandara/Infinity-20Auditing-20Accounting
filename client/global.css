@@ -88,4 +88,8 @@
   a {
     @apply transition-colors;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }

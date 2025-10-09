@@ -122,7 +122,7 @@ const About = () => {
               {values.map(({ title, description, icon: Icon }) => (
                 <div
                   key={title}
-                  className="rounded-2xl border border-border/70 bg-white p-6 shadow-soft"
+                  className="rounded-2xl border border-border/70 bg-card p-6 shadow-soft"
                 >
                   <Icon className="size-6 text-primary" />
                   <h3 className="mt-4 text-lg font-semibold text-foreground">
@@ -135,7 +135,7 @@ const About = () => {
               ))}
             </div>
           </div>
-          <div className="space-y-6 rounded-[28px] border border-border/70 bg-white p-8 shadow-soft">
+          <div className="space-y-6 rounded-[28px] border border-border/70 bg-card p-8 shadow-soft">
             <h3 className="text-xl font-semibold text-foreground">
               Our Assurance Commitments
             </h3>
@@ -166,7 +166,7 @@ const About = () => {
             {milestones.map((milestone) => (
               <div
                 key={milestone.year}
-                className="rounded-3xl border border-border/60 bg-white p-8 shadow-soft"
+                className="rounded-3xl border border-border/60 bg-card p-8 shadow-soft"
               >
                 <p className="text-sm font-semibold uppercase tracking-[0.4em] text-muted-foreground">
                   {milestone.year}
@@ -197,7 +197,7 @@ const About = () => {
           {leadership.map((leader) => (
             <div
               key={leader.name}
-              className="rounded-[26px] border border-border/70 bg-white p-8 text-center shadow-soft"
+              className="rounded-[26px] border border-border/70 bg-card p-8 text-center shadow-soft"
             >
               <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-lg font-semibold text-primary">
                 {leader.name
