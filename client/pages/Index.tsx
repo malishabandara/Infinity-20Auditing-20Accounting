@@ -160,10 +160,6 @@ export default function Index() {
                   </a>
                 </Button>
               </div>
-              <p className="text-sm text-white/75">
-                Or call us directly at{" "}
-                <span className="font-semibold">+971 50 123 4567</span>
-              </p>
             </div>
             <div className="grid max-w-xl mx-auto gap-5 sm:grid-cols-2">
               <div className="rounded-2xl bg-white/10 p-5 ring-1 ring-white/20">
