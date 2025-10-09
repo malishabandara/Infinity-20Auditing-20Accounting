@@ -276,8 +276,15 @@ export default function Index() {
       </section>
 
       <section className="relative overflow-hidden py-24">
-        <div className="absolute inset-0 bg-section-gradient" />
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0">
+          <img
+            src="https://images.pexels.com/photos/6779567/pexels-photo-6779567.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Professionals analyzing financial documents and reports with a calculator."
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(7,23,44,0.45)_0%,rgba(13,62,120,0.75)_100%)]" />
+        <div className="absolute inset-0 bg-black/30" />
         <div className="relative container space-y-12 text-white">
           <div className="flex flex-col gap-4 text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
