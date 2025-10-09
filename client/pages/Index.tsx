@@ -114,10 +114,10 @@ const stats = [
 export default function Index() {
   return (
     <div className="flex flex-col gap-0">
-      <section className="relative overflow-hidden bg-hero-gradient py-20 text-white sm:py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-hero-gradient text-white">
         <BackgroundSlideshow />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.22),transparent_60%),radial-gradient(circle_at_bottom_right,_rgba(7,23,44,0.55),transparent_70%)]" />
-        <div className="relative container grid items-center gap-12 md:gap-16 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="relative container grid min-h-[72vh] items-center gap-8 sm:gap-10 lg:gap-12 py-16 sm:py-20 lg:py-24">
           <div className="space-y-8">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-white/90 ring-1 ring-white/40">
               Precision. Clarity. Confidence.
@@ -165,6 +165,29 @@ export default function Index() {
                 <span className="font-semibold">+971 50 123 4567</span>
               </p>
             </div>
+            <div className="md:hidden mt-4 rounded-3xl bg-white p-6 shadow-soft ring-1 ring-black/5">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Continuous Monitoring</p>
+                  <p className="text-2xl font-bold text-primary">Live Compliance Index</p>
+                </div>
+                <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">99.3%</span>
+              </div>
+              <div className="mt-4 space-y-3">
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-medium text-foreground">Audit Queries</span>
+                  <span className="text-primary">Resolved in 24h</span>
+                </div>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-medium text-foreground">Tax Filings</span>
+                  <span className="text-primary">100% On Time</span>
+                </div>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-medium text-foreground">Finance KPIs</span>
+                  <span className="text-primary">+28% Accuracy</span>
+                </div>
+              </div>
+            </div>
             <div className="grid max-w-xl gap-5 sm:grid-cols-2">
               <div className="rounded-2xl bg-white/10 p-5 ring-1 ring-white/20">
                 <p className="text-xs uppercase tracking-[0.25em] text-white/65">
@@ -197,41 +220,29 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <div className="z-10 w-full max-w-sm mx-auto mt-4 rounded-3xl bg-white p-6 shadow-soft md:mt-0">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <p className="text-sm font-medium text-muted-foreground">
-                  Continuous Monitoring
-                </p>
-                <p className="text-2xl font-bold text-primary">
-                  Live Compliance Index
-                </p>
+          <div className="pointer-events-auto hidden md:block absolute bottom-8 right-4 lg:right-8 w-full max-w-sm rounded-3xl bg-white p-6 shadow-soft ring-1 ring-black/5">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">Continuous Monitoring</p>
+                  <p className="text-2xl font-bold text-primary">Live Compliance Index</p>
+                </div>
+                <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">99.3%</span>
               </div>
-              <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
-                99.3%
-              </span>
-            </div>
-            <div className="mt-4 space-y-3">
-              <div className="flex items-center justify-between text-sm">
-                <span className="font-medium text-foreground">
-                  Audit Queries
-                </span>
-                <span className="text-primary">Resolved in 24h</span>
-              </div>
-              <div className="flex items-center justify-between text-sm">
-                <span className="font-medium text-foreground">
-                  Tax Filings
-                </span>
-                <span className="text-primary">100% On Time</span>
-              </div>
-              <div className="flex items-center justify-between text-sm">
-                <span className="font-medium text-foreground">
-                  Finance KPIs
-                </span>
-                <span className="text-primary">+28% Accuracy</span>
+              <div className="mt-4 space-y-3">
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-medium text-foreground">Audit Queries</span>
+                  <span className="text-primary">Resolved in 24h</span>
+                </div>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-medium text-foreground">Tax Filings</span>
+                  <span className="text-primary">100% On Time</span>
+                </div>
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-medium text-foreground">Finance KPIs</span>
+                  <span className="text-primary">+28% Accuracy</span>
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
 
