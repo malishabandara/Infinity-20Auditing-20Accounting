@@ -200,7 +200,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="container mt-8 grid gap-4 rounded-[28px] bg-white p-8 shadow-soft sm:grid-cols-2 lg:grid-cols-4">
+      <section className="container mt-8 grid gap-4 rounded-[28px] bg-card p-8 shadow-soft sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat) => (
           <div
             key={stat.label}
@@ -236,7 +236,7 @@ export default function Index() {
             ({ title, description, icon: Icon, features }) => (
               <div
                 key={title}
-                className="group relative overflow-hidden rounded-[26px] border border-border/70 bg-white p-8 shadow-soft transition hover:-translate-y-1"
+                className="group relative overflow-hidden rounded-[26px] border border-border/70 bg-card p-8 shadow-soft transition hover:-translate-y-1"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-gradient-start/0 via-gradient-start/0 to-gradient-end/5 opacity-0 transition duration-500 group-hover:opacity-100" />
                 <div className="relative space-y-6">
@@ -328,7 +328,7 @@ export default function Index() {
               {valuePillars.map(({ title, description, icon: Icon }) => (
                 <div
                   key={title}
-                  className="rounded-2xl border border-border/70 bg-white p-6 shadow-soft"
+                  className="rounded-2xl border border-border/70 bg-card p-6 shadow-soft"
                 >
                   <Icon className="size-6 text-primary" />
                   <h3 className="mt-4 text-lg font-semibold text-foreground">
@@ -341,7 +341,7 @@ export default function Index() {
               ))}
             </div>
           </div>
-          <div className="relative isolate overflow-hidden rounded-[30px] bg-gradient-to-br from-white via-white to-secondary/60 p-10 shadow-soft">
+          <div className="relative isolate overflow-hidden rounded-[30px] bg-gradient-to-br from-card via-card to-secondary/60 p-10 shadow-soft">
             <div className="absolute -top-10 -right-10 h-36 w-36 rounded-full bg-gradient-to-br from-gradient-start/40 to-gradient-end/40" />
             <div className="relative space-y-6">
               <h3 className="text-2xl font-bold text-foreground">
@@ -395,7 +395,7 @@ export default function Index() {
 
       <section className="relative overflow-hidden py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/30" />
-        <div className="relative container flex flex-col gap-8 rounded-[30px] border border-border/70 bg-white/80 p-10 text-center shadow-soft backdrop-blur lg:flex-row lg:items-center lg:text-left">
+        <div className="relative container flex flex-col gap-8 rounded-[30px] border border-border/70 bg-card/80 p-10 text-center shadow-soft backdrop-blur lg:flex-row lg:items-center lg:text-left">
           <div className="flex-1 space-y-4">
             <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-primary">
               Ready When You Are
