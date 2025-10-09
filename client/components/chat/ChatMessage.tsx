@@ -18,7 +18,11 @@ interface ChatMessageProps {
 export const ChatMessage: React.FC<ChatMessageProps> = ({ message }) => {
   const isUser = message.role === "user";
   return (
-    <div className={cn("flex w-full items-start gap-2", isUser ? "justify-end" : "justify-start")}
+    <div
+      className={cn(
+        "flex w-full items-start gap-2",
+        isUser ? "justify-end" : "justify-start",
+      )}
       aria-label={isUser ? "User message" : "Assistant message"}
     >
       {!isUser && (
@@ -36,10 +40,17 @@ export const ChatMessage: React.FC<ChatMessageProps> = ({ message }) => {
         )}
       >
         <p className="whitespace-pre-wrap leading-relaxed">{message.content}</p>
-        <span className={cn("mt-1 block text-[10px] opacity-70", isUser ? "text-primary-foreground" : "text-muted-foreground")}
+        <span
+          className={cn(
+            "mt-1 block text-[10px] opacity-70",
+            isUser ? "text-primary-foreground" : "text-muted-foreground",
+          )}
           aria-hidden
         >
-          {new Date(message.timestamp).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
+          {new Date(message.timestamp).toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
+          })}
         </span>
       </div>
 
