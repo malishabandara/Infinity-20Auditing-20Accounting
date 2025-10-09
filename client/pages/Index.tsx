@@ -182,7 +182,10 @@ export default function Index() {
                   <span className="font-medium text-foreground">Tax Filings</span>
                   <span className="text-primary">100% On Time</span>
                 </div>
-               
+                <div className="flex items-center justify-between text-sm">
+                  <span className="font-medium text-foreground">Finance KPIs</span>
+                  <span className="text-primary">+28% Accuracy</span>
+                </div>
               </div>
             </div>
             <div className="grid max-w-xl gap-5 sm:grid-cols-2">
