@@ -23,18 +23,17 @@ export const SiteFooter = () => {
       <div className="relative">
         <div className="container grid gap-12 py-16 lg:grid-cols-4">
           <div className="space-y-5">
-            <Link to="/" className="inline-flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-hero-gradient text-lg font-bold text-white shadow-soft">
-                IA
-              </span>
-              <div>
-                <p className="text-sm uppercase tracking-[0.28em] text-muted-foreground/70">
-                  Infinity Auditing
-                </p>
-                <p className="text-xl font-semibold text-white">
-                  Infinity Auditing &amp; Accounting
-                </p>
-              </div>
+            <Link
+              to="/"
+              className="flex items-center gap-3 text-xl font-semibold text-foreground"
+            >
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F448d97f159934d6f9784cc345239a44a%2F10df66d7e53546f094860eb5fbd8fefb?format=webp&width=800"
+                alt="Infinity Auditing & Accounting logo"
+                className="h-10 w-auto object-contain drop-shadow"
+                loading="eager"
+                decoding="async"
+              />
             </Link>
             <p className="text-sm leading-relaxed text-white/80">
               Building financial clarity for ambitious organisations across the

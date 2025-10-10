@@ -27,17 +27,13 @@ export const SiteHeader = () => {
           to="/"
           className="flex items-center gap-3 text-xl font-semibold text-foreground"
         >
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-gradient-start to-gradient-end text-white shadow-soft">
-            IA
-          </span>
-          <div className="leading-none">
-            <span className="block text-base font-medium uppercase tracking-[0.2em] text-muted-foreground">
-              Infinity
-            </span>
-            <span className="block text-2xl font-extrabold text-primary">
-              Auditing &amp; Accounting
-            </span>
-          </div>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F448d97f159934d6f9784cc345239a44a%2F10df66d7e53546f094860eb5fbd8fefb?format=webp&width=800"
+            alt="Infinity Auditing & Accounting logo"
+            className="h-10 w-auto object-contain drop-shadow"
+            loading="eager"
+            decoding="async"
+          />
         </Link>
         <nav className="hidden items-center gap-8 text-sm font-semibold lg:flex">
           {navLinks.map((link) => (
