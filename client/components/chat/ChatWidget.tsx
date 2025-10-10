@@ -123,7 +123,7 @@ export const ChatWidget: React.FC = () => {
     <div className="pointer-events-none fixed bottom-4 right-4 z-50">
       {/* Floating toggle button */}
       <div
-        className={cn("flex justify-end", open ? "hidden" : "block")}
+        className={cn("flex justify-end", { hidden: open })}
         aria-hidden={open}
       >
         <Button
