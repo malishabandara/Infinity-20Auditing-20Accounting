@@ -34,14 +34,6 @@ export const SiteHeader = () => {
             loading="eager"
             decoding="async"
           />
-          <div className="leading-none">
-            <span className="block text-base font-medium uppercase tracking-[0.2em] text-muted-foreground">
-              Infinity
-            </span>
-            <span className="block text-2xl font-extrabold text-primary">
-              Auditing &amp; Accounting
-            </span>
-          </div>
         </Link>
         <nav className="hidden items-center gap-8 text-sm font-semibold lg:flex">
           {navLinks.map((link) => (
