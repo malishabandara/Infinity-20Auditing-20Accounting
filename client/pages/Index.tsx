@@ -138,7 +138,7 @@ export default function Index() {
                 <Button
                   asChild
                   size="lg"
-                  className="w-full sm:w-auto shadow-lg shadow-primary/40"
+                  className="w-64 sm:w-auto shadow-lg shadow-primary/40"
                 >
                   <Link to="/contact">
                     Schedule Consultation
@@ -149,7 +149,7 @@ export default function Index() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto border-white/60 bg-white/10 text-white hover:bg-white/20 hover:text-white"
+                  className="w-64 sm:w-auto border-white/60 bg-white/10 text-white hover:bg-white/20 hover:text-white"
                 >
                   <a
                     href="https://wa.me/971501234567"
