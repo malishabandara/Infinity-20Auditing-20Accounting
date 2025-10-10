@@ -126,7 +126,7 @@ export default function Index() {
               <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
                 Accounting &amp; Audit intelligence for modern UAE businesses.
               </h1>
-              <p className="max-w-xl text-lg text-white/85">
+              <p className="max-w-xl mx-auto text-lg text-white/85 text-center">
                 Infinity Auditing &amp; Accounting delivers proactive assurance,
                 tax, and outsourced CFO services so you stay compliant and
                 future-ready. We partner with leadership teams to transform
