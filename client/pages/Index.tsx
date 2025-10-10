@@ -138,18 +138,17 @@ export default function Index() {
                 <Button
                   asChild
                   size="lg"
-                  className="w-64 sm:w-auto shadow-lg shadow-primary/40"
+                  className="w-full sm:w-auto shadow-lg shadow-primary/40"
                 >
                   <Link to="/contact">
                     Schedule Consultation
-                    <ArrowRight className="size-4" />
                   </Link>
                 </Button>
                 <Button
                   asChild
                   size="lg"
                   variant="outline"
-                  className="w-64 sm:w-auto border-white/60 bg-white/10 text-white hover:bg-white/20 hover:text-white"
+                  className="w-full sm:w-auto border-white/60 bg-white/10 text-white hover:bg-white/20 hover:text-white"
                 >
                   <a
                     href="https://wa.me/971501234567"
