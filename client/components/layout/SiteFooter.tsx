@@ -76,31 +76,31 @@ export const SiteFooter = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 size-4" />
                 <span>
-                  Level 14, Boulevard Plaza Tower 1<br />
-                  Downtown Dubai, United Arab Emirates
+                  Level 02, Bldg. 04, Bay Square,<br />
+                  Business Bay, Dubai, UAE
                 </span>
               </li>
               <li>
                 <a
-                  href="tel:+971501234567"
+                  href="tel:+971581897800"
                   className="flex items-center gap-3 text-white/85 transition hover:text-white"
                 >
                   <Phone className="size-4" />
-                  +971 50 123 4567
+                  +971 58 189 7800
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:connect@infinityauditing.com"
+                  href="mailto:info@infinityauditing.com"
                   className="flex items-center gap-3 text-white/85 transition hover:text-white"
                 >
                   <Mail className="size-4" />
-                  connect@infinityauditing.com
+                  info@infinityauditing.com
                 </a>
               </li>
               <li>
                 <a
-                  href="https://wa.me/971501234567"
+                  href="https://wa.me/971581897800"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-3 text-white/85 transition hover:text-white"
@@ -111,7 +111,7 @@ export const SiteFooter = () => {
               </li>
               <li className="flex items-center gap-3 text-white/85">
                 <Clock className="size-4" />
-                Sun – Thu: 9:00 AM – 6:00 PM
+                Monday – Friday: 9:00 AM – 6:00 PM
               </li>
             </ul>
           </div>
