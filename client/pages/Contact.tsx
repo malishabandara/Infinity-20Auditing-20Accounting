@@ -3,20 +3,20 @@ import { Mail, MapPin, MessageCircle, Phone, Send } from "lucide-react";
 const contactChannels = [
   {
     label: "Phone",
-    value: "+971 50 123 4567",
-    href: "tel:+971501234567",
+    value: "+971 58 189 7800",
+    href: "tel:+971581897800",
     icon: Phone,
   },
   {
     label: "Email",
-    value: "connect@infinityauditing.com",
-    href: "mailto:connect@infinityauditing.com",
+    value: "info@infinityauditing.com",
+    href: "mailto:info@infinityauditing.com",
     icon: Mail,
   },
   {
     label: "WhatsApp",
     value: "Chat instantly",
-    href: "https://wa.me/971501234567",
+    href: "https://wa.me/971581897800",
     icon: MessageCircle,
   },
 ];
@@ -176,15 +176,15 @@ const Contact = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="mt-1 size-5 text-primary" />
                 <span>
-                  Level 14, Boulevard Plaza Tower 1
+                    Level 02, Bldg. 04, Bay Square,
                   <br />
-                  Downtown Dubai, United Arab Emirates
+                    Business Bay, Dubai, UAE
                 </span>
               </div>
               <div className="h-56 overflow-hidden rounded-2xl">
                 <iframe
                   title="Infinity Auditing location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.025369478907!2d55.276871576861094!3d25.203877433884508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDEyJzEzLjkiTiA1NcKwMTYnMzguNyJF!5e0!3m2!1sen!2sae!4v1705166400000!5m2!1sen!2sae"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.373303734937!2d55.299673!3d25.156869999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6d0d52e9a3cf%3A0x56a5bec96cba8237!2sZengage%20Global%20-%20UAE!5e0!3m2!1sen!2slk!4v1760546609446!5m2!1sen!2slk"
                   className="h-full w-full border-0"
                   allowFullScreen
                   loading="lazy"

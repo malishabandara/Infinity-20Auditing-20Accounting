@@ -119,7 +119,7 @@ export const SiteFooter = () => {
         <div className="border-t border-white/10">
           <div className="container flex flex-col gap-4 py-6 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              © {new Date().getFullYear()} Infinity Auditing &amp; Accounting.
+              © {new Date().getFullYear()} NextGen Web Works | +94 78 723 9394
               All rights reserved.
             </p>
             <div className="flex flex-wrap items-center gap-4">
