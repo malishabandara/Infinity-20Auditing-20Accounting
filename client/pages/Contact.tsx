@@ -1,4 +1,6 @@
 import { Mail, MapPin, MessageCircle, Phone, Send } from "lucide-react";
+import { useRef, useState } from "react";
+import { toast } from "sonner";
 
 const contactChannels = [
   {
