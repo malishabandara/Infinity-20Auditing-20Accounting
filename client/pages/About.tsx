@@ -59,21 +59,35 @@ const values = [
   },
 ];
 
-const leadership = [
+const serviceHighlights = [
   {
-    name: "Aisha Rahman",
-    role: "Managing Partner & Lead Auditor",
-    bio: "FCCA, 18 years' experience leading statutory and forensic audits across the GCC.",
+    title: "Audit & Assurance",
+    description:
+      "Robust statutory and internal audits that reveal opportunities, not just risks.",
+    icon: ShieldCheck,
+    features: ["External & Internal Audit", "IFRS Compliance", "Due Diligence"],
   },
   {
-    name: "Rohit Menon",
-    role: "Head of Tax Strategy",
-    bio: "Fellow Chartered Accountant specialising in cross-border corporate tax and VAT structuring.",
+    title: "Taxation Advisory",
+    description:
+      "Navigate UAE corporate tax, VAT, and cross-border regulation with confidence.",
+    icon: Calculator,
+    features: [
+      "Corporate Tax Planning",
+      "VAT Registration & Filing",
+      "Tax Health Checks",
+    ],
   },
   {
-    name: "Fatima Al Noor",
-    role: "Director, CFO Services",
-    bio: "Former group CFO guiding transformation, automation, and board reporting programmes.",
+    title: "Accounting & CFO",
+    description:
+      "Outsourced finance teams delivering accurate reporting and actionable insights.",
+    icon: LineChart,
+    features: [
+      "Bookkeeping Automation",
+      "CFO as a Service",
+      "Management Reporting",
+    ],
   },
 ];
 
