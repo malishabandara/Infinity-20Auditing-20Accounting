@@ -102,19 +102,19 @@ const Contact = () => {
               <label className="flex flex-col gap-2 text-sm font-medium text-muted-foreground">
                 Services of Interest
                 <select
-                  className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
+                  className="rounded-lg border border-border bg-card px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   defaultValue="Audit & Assurance"
                 >
-                  <option className="text-foreground" value="Audit & Assurance">
+                  <option value="Audit & Assurance">
                     Audit &amp; Assurance
                   </option>
-                  <option className="text-foreground" value="Taxation Advisory">
+                  <option value="Taxation Advisory">
                     Taxation Advisory
                   </option>
-                  <option className="text-foreground" value="Accounting & CFO">
+                  <option value="Accounting & CFO">
                     Accounting &amp; CFO Services
                   </option>
-                  <option className="text-foreground" value="Business Setup">
+                  <option value="Business Setup">
                     Business Incorporation
                   </option>
                 </select>
