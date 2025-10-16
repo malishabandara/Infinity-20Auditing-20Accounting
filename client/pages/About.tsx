@@ -1,4 +1,15 @@
-import { CheckCircle2, Compass, Globe2, Target } from "lucide-react";
+import {
+  ArrowRight,
+  Calculator,
+  CheckCircle2,
+  Compass,
+  Globe2,
+  LineChart,
+  ShieldCheck,
+  Target,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const milestones = [
   {
