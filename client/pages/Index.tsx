@@ -146,22 +146,22 @@ export default function Index() {
                 </Button>
               </div>
             </div>
-            <div className="grid max-w-xl mx-auto gap-5 sm:grid-cols-2">
-              <div className="rounded-2xl bg-white/10 p-5 ring-1 ring-white/20">
+            <div className="mx-auto w-full max-w-2xl">
+              <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/20">
                 <p className="text-xs uppercase tracking-[0.25em] text-white/65">
                   Value Delivered
                 </p>
-                <ul className="mt-3 space-y-2 text-sm text-white/85">
+                <ul className="mt-4 grid gap-3 sm:grid-cols-2 text-sm text-white/85">
                   <li className="flex items-center gap-2">
-                    <CheckCircle2 className="size-4" />
+                    <CheckCircle2 className="size-4 flex-shrink-0" />
                     360° compliance coverage across finance stack
                   </li>
                   <li className="flex items-center gap-2">
-                    <CheckCircle2 className="size-4" />
+                    <CheckCircle2 className="size-4 flex-shrink-0" />
                     Dedicated senior consultant for every engagement
                   </li>
                   <li className="flex items-center gap-2">
-                    <CheckCircle2 className="size-4" />
+                    <CheckCircle2 className="size-4 flex-shrink-0" />
                     Real-time dashboards for leadership decisions
                   </li>
                 </ul>
