@@ -144,33 +144,9 @@ export default function Index() {
                     Schedule Consultation
                   </Link>
                 </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="w-full sm:w-auto border-white/60 bg-white/10 text-white hover:bg-white/20 hover:text-white"
-                >
-                  <a
-                    href="https://wa.me/971501234567"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    WhatsApp Advisory
-                  </a>
-                </Button>
               </div>
             </div>
             <div className="grid max-w-xl mx-auto gap-5 sm:grid-cols-2">
-              <div className="rounded-2xl bg-white/10 p-5 ring-1 ring-white/20">
-                <p className="text-xs uppercase tracking-[0.25em] text-white/65">
-                  Featured Insight
-                </p>
-                <p className="mt-2 text-base font-semibold text-white">
-                  "Infinity guided our expansion into GCC with complete audit
-                  readiness and seamless tax structuring." — COO, Logistics
-                  Sector
-                </p>
-              </div>
               <div className="rounded-2xl bg-white/10 p-5 ring-1 ring-white/20">
                 <p className="text-xs uppercase tracking-[0.25em] text-white/65">
                   Value Delivered
