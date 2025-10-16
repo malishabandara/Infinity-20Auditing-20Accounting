@@ -208,39 +208,60 @@ const About = () => {
         </div>
       </section>
 
-      <section className="container space-y-10 py-24">
-        <div className="text-center">
+      <section className="container space-y-12 py-24">
+        <div className="space-y-4 text-center">
+          <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-2 text-xs font-semibold uppercase tracking-[0.4em] text-secondary-foreground">
+            Our Capabilities
+          </span>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Leadership Team
+            A fully integrated audit, tax, and finance partnership
           </h2>
-          <p className="mt-4 text-base text-muted-foreground">
-            Senior specialists lead every engagement, applying global experience
-            to local regulations.
+          <p className="mx-auto max-w-3xl text-lg text-muted-foreground">
+            From statutory reporting to strategic financial leadership, our
+            specialists work as an extension of your team.
           </p>
         </div>
         <div className="grid gap-8 lg:grid-cols-3">
-          {leadership.map((leader) => (
-            <div
-              key={leader.name}
-              className="rounded-[26px] border border-border/70 bg-card p-8 text-center shadow-soft"
-            >
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-lg font-semibold text-primary">
-                {leader.name
-                  .split(" ")
-                  .map((part) => part[0])
-                  .join("")}
+          {serviceHighlights.map(
+            ({ title, description, icon: Icon, features }) => (
+              <div
+                key={title}
+                className="group relative overflow-hidden rounded-[26px] border border-border/70 bg-card p-8 shadow-soft transition hover:-translate-y-1"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-gradient-start/0 via-gradient-start/0 to-gradient-end/5 opacity-0 transition duration-500 group-hover:opacity-100" />
+                <div className="relative space-y-6">
+                  <div className="inline-flex rounded-full bg-primary/10 p-3 text-primary">
+                    <Icon className="size-6" />
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-2xl font-semibold text-foreground">
+                      {title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      {description}
+                    </p>
+                  </div>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    {features.map((feature) => (
+                      <li
+                        key={feature}
+                        className="flex items-center gap-2 text-foreground/80"
+                      >
+                        <CheckCircle2 className="size-4 text-primary" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <Button variant="ghost" className="px-0 text-primary" asChild>
+                    <Link to="/services">
+                      Explore capability
+                      <ArrowRight className="size-4" />
+                    </Link>
+                  </Button>
+                </div>
               </div>
-              <h3 className="mt-4 text-xl font-semibold text-foreground">
-                {leader.name}
-              </h3>
-              <p className="text-sm font-medium uppercase tracking-[0.3em] text-primary">
-                {leader.role}
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {leader.bio}
-              </p>
-            </div>
-          ))}
+            ),
+          )}
         </div>
       </section>
     </div>
