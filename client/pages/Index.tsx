@@ -140,53 +140,29 @@ export default function Index() {
                   size="lg"
                   className="w-full sm:w-auto shadow-lg shadow-primary/40"
                 >
-                  <Link to="/contact">
-                    Schedule Consultation
-                  </Link>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="w-full sm:w-auto border-white/60 bg-white/10 text-white hover:bg-white/20 hover:text-white"
-                >
-                  <a
-                    href="https://wa.me/971501234567"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    WhatsApp Advisory
-                  </a>
+                  <Link to="/contact">Schedule Consultation</Link>
                 </Button>
               </div>
             </div>
-            <div className="grid max-w-xl mx-auto gap-5 sm:grid-cols-2">
-              <div className="rounded-2xl bg-white/10 p-5 ring-1 ring-white/20">
-                <p className="text-xs uppercase tracking-[0.25em] text-white/65">
-                  Featured Insight
-                </p>
-                <p className="mt-2 text-base font-semibold text-white">
-                  "Infinity guided our expansion into GCC with complete audit
-                  readiness and seamless tax structuring." — COO, Logistics
-                  Sector
-                </p>
-              </div>
-              <div className="rounded-2xl bg-white/10 p-5 ring-1 ring-white/20">
+            <div className="mx-auto w-full max-w-2xl">
+              <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/20">
                 <p className="text-xs uppercase tracking-[0.25em] text-white/65">
                   Value Delivered
                 </p>
-                <ul className="mt-3 space-y-2 text-sm text-white/85">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="size-4" />
-                    360° compliance coverage across finance stack
+                <ul className="mt-4 grid gap-4 sm:grid-cols-2 text-sm text-white/85">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
+                    <span>360° compliance coverage across finance stack</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="size-4" />
-                    Dedicated senior consultant for every engagement
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
+                    <span>
+                      Dedicated senior consultant for every engagement
+                    </span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="size-4" />
-                    Real-time dashboards for leadership decisions
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
+                    <span>Real-time dashboards for leadership decisions</span>
                   </li>
                 </ul>
               </div>

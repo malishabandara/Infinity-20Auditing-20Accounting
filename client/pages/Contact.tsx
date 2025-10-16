@@ -1,4 +1,6 @@
 import { Mail, MapPin, MessageCircle, Phone, Send } from "lucide-react";
+import { useRef, useState } from "react";
+import { toast } from "sonner";
 
 const contactChannels = [
   {
@@ -22,6 +24,46 @@ const contactChannels = [
 ];
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(formRef.current!);
+      const fullName = formData.get("fullName") as string;
+      const company = formData.get("company") as string;
+      const email = formData.get("email") as string;
+      const phone = formData.get("phone") as string;
+      const service = formData.get("service") as string;
+      const message = formData.get("message") as string;
+
+      // Format message for WhatsApp
+      const whatsappMessage = `*New Enquiry from Contact Form*\n\n*Full Name:* ${fullName}\n*Company:* ${company}\n*Email:* ${email}\n*Phone:* ${phone}\n*Service of Interest:* ${service}\n*Message:* ${message}`;
+
+      // Encode message for URL
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      const whatsappUrl = `https://wa.me/971581897800?text=${encodedMessage}`;
+
+      // Open WhatsApp with the pre-filled message
+      window.open(whatsappUrl, "_blank");
+
+      // Show success notification
+      toast.success(
+        "Opening WhatsApp. Please send your message to complete the enquiry.",
+      );
+
+      // Reset form
+      formRef.current?.reset();
+    } catch (error) {
+      toast.error("Failed to process enquiry. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="flex flex-col">
       <section className="relative overflow-hidden bg-hero-gradient pb-24 pt-32 text-white">
@@ -60,12 +102,17 @@ const Contact = () => {
               Tell us about your focus areas and preferred engagement timeline.
               We will follow up with a tailored roadmap.
             </p>
-            <form className="mt-8 space-y-6">
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className="mt-8 space-y-6"
+            >
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="flex flex-col gap-2 text-sm font-medium text-muted-foreground">
                   Full Name
                   <input
                     type="text"
+                    name="fullName"
                     required
                     placeholder="Jane Ahmed"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
@@ -75,6 +122,7 @@ const Contact = () => {
                   Company
                   <input
                     type="text"
+                    name="company"
                     placeholder="Infinity Ventures"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   />
@@ -85,6 +133,7 @@ const Contact = () => {
                   Corporate Email
                   <input
                     type="email"
+                    name="email"
                     required
                     placeholder="name@company.com"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
@@ -94,6 +143,7 @@ const Contact = () => {
                   Contact Number
                   <input
                     type="tel"
+                    name="phone"
                     placeholder="+971 50 000 0000"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   />
@@ -102,26 +152,24 @@ const Contact = () => {
               <label className="flex flex-col gap-2 text-sm font-medium text-muted-foreground">
                 Services of Interest
                 <select
-                  className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
+                  name="service"
+                  className="rounded-lg border border-border bg-card px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   defaultValue="Audit & Assurance"
                 >
-                  <option className="text-foreground" value="Audit & Assurance">
+                  <option value="Audit & Assurance">
                     Audit &amp; Assurance
                   </option>
-                  <option className="text-foreground" value="Taxation Advisory">
-                    Taxation Advisory
-                  </option>
-                  <option className="text-foreground" value="Accounting & CFO">
+                  <option value="Taxation Advisory">Taxation Advisory</option>
+                  <option value="Accounting & CFO">
                     Accounting &amp; CFO Services
                   </option>
-                  <option className="text-foreground" value="Business Setup">
-                    Business Incorporation
-                  </option>
+                  <option value="Business Setup">Business Incorporation</option>
                 </select>
               </label>
               <label className="flex flex-col gap-2 text-sm font-medium text-muted-foreground">
                 How can we help?
                 <textarea
+                  name="message"
                   rows={5}
                   placeholder="Share your current objectives, timelines, or challenges."
                   className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
@@ -130,9 +178,10 @@ const Contact = () => {
               </label>
               <button
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition hover:bg-primary/90"
+                disabled={isSubmitting}
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition hover:bg-primary/90 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Submit Enquiry
+                {isSubmitting ? "Processing..." : "Submit Enquiry"}
                 <Send className="size-4" />
               </button>
             </form>
@@ -176,9 +225,9 @@ const Contact = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="mt-1 size-5 text-primary" />
                 <span>
-                    Level 02, Bldg. 04, Bay Square,
+                  Level 02, Bldg. 04, Bay Square,
                   <br />
-                    Business Bay, Dubai, UAE
+                  Business Bay, Dubai, UAE
                 </span>
               </div>
               <div className="h-56 overflow-hidden rounded-2xl">

@@ -2,6 +2,8 @@ import {
   ArrowRight,
   BarChart3,
   CheckCircle2,
+  ClipboardSignature,
+  FileSearch,
   FileSignature,
   LineChart,
   ShieldCheck,
@@ -43,6 +45,28 @@ const services = [
       "Interim CFO and board reporting",
     ],
     icon: LineChart,
+  },
+  {
+    title: "Special Purpose Review",
+    description:
+      "Specialized audit engagements tailored for unique business needs, investment decisions, and regulatory requirements.",
+    deliverables: [
+      "Pre-investment due diligence",
+      "ESG and sustainability assurance",
+      "Financial feasibility studies",
+    ],
+    icon: FileSearch,
+  },
+  {
+    title: "Business Setup & Advisory",
+    description:
+      "Complete guidance for business formation, accounting systems architecture, and financial leadership mentoring.",
+    deliverables: [
+      "Entity incorporation guidance",
+      "Accounting systems architecture",
+      "CFO mentoring & training",
+    ],
+    icon: ClipboardSignature,
   },
 ];
 
@@ -221,9 +245,7 @@ const Services = () => {
             </div>
           </div>
           <div className="rounded-[30px] bg-gradient-to-br from-primary/90 to-primary/70 p-8 text-white shadow-soft">
-            <h3 className="text-2xl font-semibold">
-              Finance diagnostics
-            </h3>
+            <h3 className="text-2xl font-semibold">Finance diagnostics</h3>
             <p className="mt-3 text-sm text-white/80">
               Receive a comprehensive assessment covering controls, reporting,
               compliance, and systems adoption with prioritised recommendations.
