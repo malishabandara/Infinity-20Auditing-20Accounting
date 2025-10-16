@@ -100,12 +100,13 @@ const Contact = () => {
               Tell us about your focus areas and preferred engagement timeline.
               We will follow up with a tailored roadmap.
             </p>
-            <form className="mt-8 space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="mt-8 space-y-6">
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="flex flex-col gap-2 text-sm font-medium text-muted-foreground">
                   Full Name
                   <input
                     type="text"
+                    name="fullName"
                     required
                     placeholder="Jane Ahmed"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
@@ -115,6 +116,7 @@ const Contact = () => {
                   Company
                   <input
                     type="text"
+                    name="company"
                     placeholder="Infinity Ventures"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   />
@@ -125,6 +127,7 @@ const Contact = () => {
                   Corporate Email
                   <input
                     type="email"
+                    name="email"
                     required
                     placeholder="name@company.com"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
@@ -134,6 +137,7 @@ const Contact = () => {
                   Contact Number
                   <input
                     type="tel"
+                    name="phone"
                     placeholder="+971 50 000 0000"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   />
@@ -142,6 +146,7 @@ const Contact = () => {
               <label className="flex flex-col gap-2 text-sm font-medium text-muted-foreground">
                 Services of Interest
                 <select
+                  name="service"
                   className="rounded-lg border border-border bg-card px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   defaultValue="Audit & Assurance"
                 >
@@ -162,6 +167,7 @@ const Contact = () => {
               <label className="flex flex-col gap-2 text-sm font-medium text-muted-foreground">
                 How can we help?
                 <textarea
+                  name="message"
                   rows={5}
                   placeholder="Share your current objectives, timelines, or challenges."
                   className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
@@ -170,9 +176,10 @@ const Contact = () => {
               </label>
               <button
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition hover:bg-primary/90"
+                disabled={isSubmitting}
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition hover:bg-primary/90 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Submit Enquiry
+                {isSubmitting ? "Processing..." : "Submit Enquiry"}
                 <Send className="size-4" />
               </button>
             </form>
