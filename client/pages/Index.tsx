@@ -151,18 +151,18 @@ export default function Index() {
                 <p className="text-xs uppercase tracking-[0.25em] text-white/65">
                   Value Delivered
                 </p>
-                <ul className="mt-4 grid gap-3 sm:grid-cols-2 text-sm text-white/85">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="size-4 flex-shrink-0" />
-                    360° compliance coverage across finance stack
+                <ul className="mt-4 grid gap-4 sm:grid-cols-2 text-sm text-white/85">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
+                    <span>360° compliance coverage across finance stack</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="size-4 flex-shrink-0" />
-                    Dedicated senior consultant for every engagement
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
+                    <span>Dedicated senior consultant for every engagement</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="size-4 flex-shrink-0" />
-                    Real-time dashboards for leadership decisions
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
+                    <span>Real-time dashboards for leadership decisions</span>
                   </li>
                 </ul>
               </div>
