@@ -245,9 +245,7 @@ const Services = () => {
             </div>
           </div>
           <div className="rounded-[30px] bg-gradient-to-br from-primary/90 to-primary/70 p-8 text-white shadow-soft">
-            <h3 className="text-2xl font-semibold">
-              Finance diagnostics
-            </h3>
+            <h3 className="text-2xl font-semibold">Finance diagnostics</h3>
             <p className="mt-3 text-sm text-white/80">
               Receive a comprehensive assessment covering controls, reporting,
               compliance, and systems adoption with prioritised recommendations.

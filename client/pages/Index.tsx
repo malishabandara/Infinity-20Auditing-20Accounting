@@ -140,9 +140,7 @@ export default function Index() {
                   size="lg"
                   className="w-full sm:w-auto shadow-lg shadow-primary/40"
                 >
-                  <Link to="/contact">
-                    Schedule Consultation
-                  </Link>
+                  <Link to="/contact">Schedule Consultation</Link>
                 </Button>
               </div>
             </div>
@@ -158,7 +156,9 @@ export default function Index() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
-                    <span>Dedicated senior consultant for every engagement</span>
+                    <span>
+                      Dedicated senior consultant for every engagement
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />

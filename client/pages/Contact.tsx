@@ -51,7 +51,9 @@ const Contact = () => {
       window.open(whatsappUrl, "_blank");
 
       // Show success notification
-      toast.success("Opening WhatsApp. Please send your message to complete the enquiry.");
+      toast.success(
+        "Opening WhatsApp. Please send your message to complete the enquiry.",
+      );
 
       // Reset form
       formRef.current?.reset();
@@ -100,7 +102,11 @@ const Contact = () => {
               Tell us about your focus areas and preferred engagement timeline.
               We will follow up with a tailored roadmap.
             </p>
-            <form ref={formRef} onSubmit={handleSubmit} className="mt-8 space-y-6">
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className="mt-8 space-y-6"
+            >
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="flex flex-col gap-2 text-sm font-medium text-muted-foreground">
                   Full Name
@@ -153,15 +159,11 @@ const Contact = () => {
                   <option value="Audit & Assurance">
                     Audit &amp; Assurance
                   </option>
-                  <option value="Taxation Advisory">
-                    Taxation Advisory
-                  </option>
+                  <option value="Taxation Advisory">Taxation Advisory</option>
                   <option value="Accounting & CFO">
                     Accounting &amp; CFO Services
                   </option>
-                  <option value="Business Setup">
-                    Business Incorporation
-                  </option>
+                  <option value="Business Setup">Business Incorporation</option>
                 </select>
               </label>
               <label className="flex flex-col gap-2 text-sm font-medium text-muted-foreground">
@@ -223,9 +225,9 @@ const Contact = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="mt-1 size-5 text-primary" />
                 <span>
-                    Level 02, Bldg. 04, Bay Square,
+                  Level 02, Bldg. 04, Bay Square,
                   <br />
-                    Business Bay, Dubai, UAE
+                  Business Bay, Dubai, UAE
                 </span>
               </div>
               <div className="h-56 overflow-hidden rounded-2xl">
