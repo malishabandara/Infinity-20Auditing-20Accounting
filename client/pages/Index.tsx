@@ -46,28 +46,6 @@ const serviceHighlights = [
       "Management Reporting",
     ],
   },
-  {
-    title: "Special Purpose Review",
-    description:
-      "Specialized audit engagements tailored for unique business needs and regulatory requirements.",
-    icon: FileSearch,
-    features: [
-      "Pre-investment Due Diligence",
-      "ESG & Sustainability Assurance",
-      "Financial Feasibility Studies",
-    ],
-  },
-  {
-    title: "Business Setup & Advisory",
-    description:
-      "Complete guidance for business formation, accounting systems, and financial leadership.",
-    icon: ClipboardSignature,
-    features: [
-      "Entity Incorporation Guidance",
-      "Accounting Systems Architecture",
-      "CFO Mentoring & Training",
-    ],
-  },
 ];
 
 const valuePillars = [
