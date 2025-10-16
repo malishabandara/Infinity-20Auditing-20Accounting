@@ -10,6 +10,12 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 
 const milestones = [
   {
@@ -88,6 +94,39 @@ const serviceHighlights = [
       "CFO as a Service",
       "Management Reporting",
     ],
+  },
+];
+
+const faqs = [
+  {
+    question: "What industries do you specialise in?",
+    answer:
+      "We serve 24+ industries including logistics, healthcare, hospitality, retail, manufacturing, real estate, and professional services. Each sector has dedicated specialists who understand industry-specific regulatory requirements and challenges.",
+  },
+  {
+    question: "How does your advisory differ from traditional audit firms?",
+    answer:
+      "Our approach is proactive rather than reactive. Beyond compliance, we translate audit findings into actionable business insights. We embed alongside your leadership team, combining rigorous governance with strategic advisory that drives growth.",
+  },
+  {
+    question: "Do you offer outsourced CFO services?",
+    answer:
+      "Yes. Our Accounting & CFO service provides outsourced finance teams delivering bookkeeping automation, management reporting, and strategic financial leadership. Your team gains access to experienced CFOs without fixed overheads.",
+  },
+  {
+    question: "What is your approach to UAE tax compliance?",
+    answer:
+      "We guide clients through UAE corporate tax, VAT registration, and cross-border taxation with confidence. Our advisors stay current with regulatory changes and help optimise your tax position while maintaining strict compliance.",
+  },
+  {
+    question: "How do you ensure independence and objectivity?",
+    answer:
+      "Independence is non-negotiable at Infinity. Every engagement is benchmarked to international standards, overseen by partners and senior managers, and grounded in our commitment to uncompromising governance.",
+  },
+  {
+    question: "What is your engagement model?",
+    answer:
+      "We customise our engagement based on your needs—from project-based advisory to ongoing partnerships. All engagements include partner-led oversight, regular reporting, and direct access to senior team members.",
   },
 ];
 
@@ -262,6 +301,34 @@ const About = () => {
               </div>
             ),
           )}
+        </div>
+      </section>
+
+      <section className="bg-secondary/30 py-24">
+        <div className="container space-y-12">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-muted-foreground">
+              Find answers to common questions about our services, engagement
+              model, and approach to financial advisory.
+            </p>
+          </div>
+          <div className="mx-auto max-w-3xl">
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`}>
+                  <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
         </div>
       </section>
     </div>
