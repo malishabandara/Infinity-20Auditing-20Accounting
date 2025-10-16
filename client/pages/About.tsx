@@ -311,7 +311,8 @@ const About = () => {
               Frequently Asked Questions
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-muted-foreground">
-              Find answers to common questions about our services, engagement model, and approach to financial advisory.
+              Find answers to common questions about our services, engagement
+              model, and approach to financial advisory.
             </p>
           </div>
           <div className="mx-auto max-w-3xl">
