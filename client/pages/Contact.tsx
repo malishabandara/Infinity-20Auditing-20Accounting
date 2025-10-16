@@ -24,6 +24,44 @@ const contactChannels = [
 ];
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(formRef.current!);
+      const fullName = formData.get("fullName") as string;
+      const company = formData.get("company") as string;
+      const email = formData.get("email") as string;
+      const phone = formData.get("phone") as string;
+      const service = formData.get("service") as string;
+      const message = formData.get("message") as string;
+
+      // Format message for WhatsApp
+      const whatsappMessage = `*New Enquiry from Contact Form*\n\n*Full Name:* ${fullName}\n*Company:* ${company}\n*Email:* ${email}\n*Phone:* ${phone}\n*Service of Interest:* ${service}\n*Message:* ${message}`;
+
+      // Encode message for URL
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      const whatsappUrl = `https://wa.me/971581897800?text=${encodedMessage}`;
+
+      // Open WhatsApp with the pre-filled message
+      window.open(whatsappUrl, "_blank");
+
+      // Show success notification
+      toast.success("Opening WhatsApp. Please send your message to complete the enquiry.");
+
+      // Reset form
+      formRef.current?.reset();
+    } catch (error) {
+      toast.error("Failed to process enquiry. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="flex flex-col">
       <section className="relative overflow-hidden bg-hero-gradient pb-24 pt-32 text-white">
