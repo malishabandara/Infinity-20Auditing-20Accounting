@@ -58,7 +58,7 @@ const valuePillars = [
   {
     title: "Senior Consultants on Every Engagement",
     description:
-      "Average 12+ years' experience across financial services, construction, logistics, and technology sectors.",
+      "Average 9+ years' experience across financial services, construction, logistics, and technology sectors.",
     icon: UserCheck,
   },
   {
@@ -105,8 +105,8 @@ const clients = [
 ];
 
 const stats = [
-  { label: "Years of Advisory", value: "18+" },
-  { label: "Clients Across GCC", value: "320" },
+  { label: "Years of Advisory", value: "9+" },
+  { label: "Clients Across GCC", value: "120" },
   { label: "Industries Served", value: "24" },
   { label: "Audit Success Rate", value: "99%" },
 ];
@@ -376,7 +376,7 @@ export default function Index() {
       <section className="container space-y-10 pb-24">
         <div className="flex flex-col gap-4 text-center">
           <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-            Trusted by finance leaders across the UAE
+            Trusted by multiple companies across the UAE
           </h2>
           <p className="mx-auto max-w-2xl text-sm text-muted-foreground">
             Mid-market groups, family offices, and high-growth innovators rely
@@ -417,10 +417,10 @@ export default function Index() {
               <Link to="/contact">Book Strategy Call</Link>
             </Button>
             <a
-              href="tel:+971501234567"
+              href="tel:+971581897800"
               className="text-sm font-semibold text-primary hover:text-primary/80"
             >
-              Prefer to speak now? Call +971 50 123 4567
+              Prefer to speak now? Call +971 58 189 7800
             </a>
           </div>
         </div>
