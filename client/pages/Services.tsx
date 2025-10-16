@@ -2,6 +2,8 @@ import {
   ArrowRight,
   BarChart3,
   CheckCircle2,
+  ClipboardSignature,
+  FileSearch,
   FileSignature,
   LineChart,
   ShieldCheck,
