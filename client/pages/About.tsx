@@ -303,6 +303,33 @@ const About = () => {
           )}
         </div>
       </section>
+
+      <section className="bg-secondary/30 py-24">
+        <div className="container space-y-12">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-muted-foreground">
+              Find answers to common questions about our services, engagement model, and approach to financial advisory.
+            </p>
+          </div>
+          <div className="mx-auto max-w-3xl">
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`}>
+                  <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
