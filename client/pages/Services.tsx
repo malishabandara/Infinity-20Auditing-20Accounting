@@ -222,7 +222,7 @@ const Services = () => {
           </div>
           <div className="rounded-[30px] bg-gradient-to-br from-primary/90 to-primary/70 p-8 text-white shadow-soft">
             <h3 className="text-2xl font-semibold">
-              Finance diagnostics in 10 working days
+              Finance diagnostics
             </h3>
             <p className="mt-3 text-sm text-white/80">
               Receive a comprehensive assessment covering controls, reporting,

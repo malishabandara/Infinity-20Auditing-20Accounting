@@ -2,28 +2,28 @@ import { CheckCircle2, Compass, Globe2, Target } from "lucide-react";
 
 const milestones = [
   {
-    year: "2006",
-    title: "Founded in Dubai",
+    year: "2013",
+    title: "Founded in India",
     description:
       "Built to deliver rigorous audit support for family businesses expanding across the GCC.",
   },
   {
-    year: "2012",
+    year: "2018",
     title: "Regional Expansion",
     description:
       "Established specialised practices for logistics, healthcare, and hospitality sectors.",
   },
   {
-    year: "2018",
+    year: "2024",
     title: "Digital Finance Lab",
     description:
       "Launched analytics-led advisory to help CFOs visualise real-time compliance and cash flow.",
   },
   {
-    year: "2024",
+    year: "2025",
     title: "Infinity Today",
     description:
-      "320+ clients across 24 industries with ongoing engagements in tax, assurance, and advisory.",
+      "120+ clients across 24 industries with ongoing engagements in tax, assurance, and advisory.",
   },
 ];
 
