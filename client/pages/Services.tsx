@@ -46,6 +46,28 @@ const services = [
     ],
     icon: LineChart,
   },
+  {
+    title: "Special Purpose Review",
+    description:
+      "Specialized audit engagements tailored for unique business needs, investment decisions, and regulatory requirements.",
+    deliverables: [
+      "Pre-investment due diligence",
+      "ESG and sustainability assurance",
+      "Financial feasibility studies",
+    ],
+    icon: FileSearch,
+  },
+  {
+    title: "Business Setup & Advisory",
+    description:
+      "Complete guidance for business formation, accounting systems architecture, and financial leadership mentoring.",
+    deliverables: [
+      "Entity incorporation guidance",
+      "Accounting systems architecture",
+      "CFO mentoring & training",
+    ],
+    icon: ClipboardSignature,
+  },
 ];
 
 const approach = [
