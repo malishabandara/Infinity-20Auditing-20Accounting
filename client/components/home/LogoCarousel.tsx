@@ -61,7 +61,7 @@ export function LogoCarousel() {
               transition: "transform linear",
             }}
           >
-            <div className="flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full border-2 border-border/60 bg-card/50 p-4 flex-shrink-0">
+            <div className="flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full border-2 border-border/60 bg-white p-4 flex-shrink-0">
               <img
                 src={logo.src}
                 alt={logo.alt}
