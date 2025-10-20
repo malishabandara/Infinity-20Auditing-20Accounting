@@ -15,6 +15,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { CountUp } from "@/components/ui/count-up";
 import { BackgroundSlideshow } from "@/components/home/BackgroundSlideshow";
+import { LogoCarousel } from "@/components/home/LogoCarousel";
 
 const serviceHighlights = [
   {
@@ -96,14 +97,6 @@ const auditSolutions = [
   },
 ];
 
-const clients = [
-  "Emirates Logistics",
-  "MAB Group",
-  "SkyReach Holdings",
-  "Vertex Medical",
-  "Bluewave Retail",
-];
-
 const stats = [
   { label: "Years of Advisory", value: "9+" },
   { label: "Clients Across GCC", value: "120" },
@@ -145,11 +138,11 @@ export default function Index() {
               </div>
             </div>
             <div className="mx-auto w-full max-w-2xl">
-              <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/20">
-                <p className="text-xs uppercase tracking-[0.25em] text-white/65">
+              <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/20 text-left">
+                <p className="text-xs uppercase tracking-[0.25em] text-white/65 text-center">
                   Value Delivered
                 </p>
-                <ul className="mt-4 grid gap-4 sm:grid-cols-2 text-sm text-white/85">
+                <ul className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 text-sm text-white/85">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
                     <span>360° compliance coverage across finance stack</span>
@@ -360,15 +353,8 @@ export default function Index() {
             mandates.
           </p>
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-6 text-base font-semibold text-muted-foreground">
-          {clients.map((client) => (
-            <span
-              key={client}
-              className="rounded-full border border-border/80 bg-secondary px-6 py-3 text-secondary-foreground"
-            >
-              {client}
-            </span>
-          ))}
+        <div className="flex items-center justify-center">
+          <LogoCarousel />
         </div>
       </section>
 
