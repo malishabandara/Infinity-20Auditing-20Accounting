@@ -233,7 +233,7 @@ const Contact = () => {
               <div className="h-56 overflow-hidden rounded-2xl">
                 <iframe
                   title="Infinity Auditing location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.373303734937!2d55.299673!3d25.156869999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6d0d52e9a3cf%3A0x56a5bec96cba8237!2sZengage%20Global%20-%20UAE!5e0!3m2!1sen!2slk!4v1760546609446!5m2!1sen!2slk"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1805.2610124839664!2d55.27903098837028!3d25.185612221654054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6830646a7739%3A0xc40f6798e6190cdf!2sBusiness%20Bay%20-%20Bay%20Square%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2slk!4v1760935709799!5m2!1sen!2slk"
                   className="h-full w-full border-0"
                   allowFullScreen
                   loading="lazy"
