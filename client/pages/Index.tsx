@@ -149,7 +149,7 @@ export default function Index() {
                 <p className="text-xs uppercase tracking-[0.25em] text-white/65">
                   Value Delivered
                 </p>
-                <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 text-sm text-white/85">
+                <ul className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 text-sm text-white/85">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
                     <span>360° compliance coverage across finance stack</span>
