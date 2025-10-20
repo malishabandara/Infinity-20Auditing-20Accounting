@@ -359,15 +359,8 @@ export default function Index() {
             mandates.
           </p>
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-6 text-base font-semibold text-muted-foreground">
-          {clients.map((client) => (
-            <span
-              key={client}
-              className="rounded-full border border-border/80 bg-secondary px-6 py-3 text-secondary-foreground"
-            >
-              {client}
-            </span>
-          ))}
+        <div className="flex items-center justify-center">
+          <LogoCarousel />
         </div>
       </section>
 
