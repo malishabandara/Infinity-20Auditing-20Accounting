@@ -97,14 +97,6 @@ const auditSolutions = [
   },
 ];
 
-const clients = [
-  "Emirates Logistics",
-  "MAB Group",
-  "SkyReach Holdings",
-  "Vertex Medical",
-  "Bluewave Retail",
-];
-
 const stats = [
   { label: "Years of Advisory", value: "9+" },
   { label: "Clients Across GCC", value: "120" },
