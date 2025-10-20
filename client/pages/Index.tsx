@@ -145,7 +145,7 @@ export default function Index() {
               </div>
             </div>
             <div className="mx-auto w-full max-w-2xl">
-              <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/20">
+              <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/20 text-left">
                 <p className="text-xs uppercase tracking-[0.25em] text-white/65">
                   Value Delivered
                 </p>
