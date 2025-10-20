@@ -61,7 +61,11 @@ export function LogoCarousel() {
               transition: "transform linear",
             }}
           >
-            <div className="flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full border-2 border-border/60 bg-white p-4 flex-shrink-0">
+            <div className={`flex items-center justify-center rounded-full border-2 border-border/60 bg-white p-4 flex-shrink-0 ${
+              ["Idealhomes", "TEAM GLOBAL"].includes(logo.name)
+                ? "w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28"
+                : "w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32"
+            }`}>
               <img
                 src={logo.src}
                 alt={logo.alt}
