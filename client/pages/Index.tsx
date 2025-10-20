@@ -156,9 +156,7 @@ export default function Index() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
-                    <span>
-                      Dedicated senior consultant for every engagement
-                    </span>
+                    <span>Dedicated senior consultant for every engagement</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
