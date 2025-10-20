@@ -15,6 +15,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { CountUp } from "@/components/ui/count-up";
 import { BackgroundSlideshow } from "@/components/home/BackgroundSlideshow";
+import { LogoCarousel } from "@/components/home/LogoCarousel";
 
 const serviceHighlights = [
   {
