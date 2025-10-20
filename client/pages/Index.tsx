@@ -146,7 +146,7 @@ export default function Index() {
             </div>
             <div className="mx-auto w-full max-w-2xl">
               <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/20 text-left">
-                <p className="text-xs uppercase tracking-[0.25em] text-white/65">
+                <p className="text-xs uppercase tracking-[0.25em] text-white/65 text-center">
                   Value Delivered
                 </p>
                 <ul className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 text-sm text-white/85">
