@@ -14,7 +14,7 @@ const logos: Logo[] = [
   },
   {
     name: "Idealhomes",
-    src: "https://cdn.builder.io/api/v1/image/assets%2F448d97f159934d6f9784cc345239a44a%2Ffdd2b1fdad114222a3463ad6c8f8f2a1?format=webp&width=800",
+    src: "https://cdn.builder.io/api/v1/image/assets%2F448d97f159934d6f9784cc345239a44a%2Ffdd2b1fdad114222a3463ad6c8f8f2a1?format=webp&width=700",
     alt: "Idealhomes Real Estate",
   },
   {
@@ -29,7 +29,7 @@ const logos: Logo[] = [
   },
   {
     name: "TEAM GLOBAL",
-    src: "https://cdn.builder.io/api/v1/image/assets%2F448d97f159934d6f9784cc345239a44a%2F983c7fc17e6c431e8282735faa2207c2?format=webp&width=800",
+    src: "https://cdn.builder.io/api/v1/image/assets%2F448d97f159934d6f9784cc345239a44a%2F983c7fc17e6c431e8282735faa2207c2?format=webp&width=700",
     alt: "TEAM GLOBAL",
   },
   {
