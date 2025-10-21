@@ -102,11 +102,10 @@ export default function AML() {
             </span>
             <div className="space-y-6">
               <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
-                Best Anti-Money Laundering Provider
+                Your Trusted Patner in AML Risk Management
               </h1>
               <p className="max-w-xl mx-auto text-lg text-white/85 text-center">
-                Your Trusted Partner in AML Risk Management. We deliver tailored
-                Anti-Money Laundering compliance solutions that protect your
+                We deliver tailored Anti-Money Laundering compliance solutions that protect your
                 business, ensure regulatory alignment, and foster long-term
                 credibility.
               </p>
@@ -121,11 +120,11 @@ export default function AML() {
               </Button>
             </div>
             <div className="mx-auto w-full max-w-2xl">
-              <div className="rounded-2xl bg-white/20 p-6 ring-1 ring-white/20 text-left">
-                <p className="text-xs uppercase tracking-[0.25em] text-white/95 text-center">
+              <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/20 text-left">
+                <p className="text-xs uppercase tracking-[0.25em] text-white text-center">
                   Key Benefits
                 </p>
-                <ul className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 text-sm text-white/95">
+                <ul className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 text-sm text-white">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
                     <span>Safeguard from financial crime</span>
@@ -216,7 +215,7 @@ export default function AML() {
         <div className="relative container space-y-12 text-white">
           <div className="flex flex-col gap-4 text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              Why Ontrax: Your Unwavering Compliance Advantage
+              Why Infinity: Your Unwavering Compliance Advantage
             </h2>
             <p className="mx-auto max-w-3xl text-lg text-white/80">
               Trusted by regulated entities across the MENA region

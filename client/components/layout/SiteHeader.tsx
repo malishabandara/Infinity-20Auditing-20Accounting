@@ -57,7 +57,7 @@ export const SiteHeader = () => {
         <div className="hidden items-center gap-3 lg:flex">
           <Button variant="outline" asChild>
             <a
-              href="https://wa.me/971501234567"
+              href="https://wa.me/971581897800"
               target="_blank"
               rel="noreferrer"
             >
@@ -106,7 +106,7 @@ export const SiteHeader = () => {
           <div className="flex flex-col gap-3 border-t border-border/80 pt-4">
             <Button variant="outline" asChild className="justify-center">
               <a
-                href="https://wa.me/971501234567"
+                href="https://wa.me/971581897800"
                 target="_blank"
                 rel="noreferrer"
               >
