@@ -76,10 +76,10 @@ const whyOntrax = [
 ];
 
 const amlStats = [
-  { label: "Customers Worldwide", value: "2500+" },
-  { label: "Years of Experience", value: "6+" },
-  { label: "Industries Served", value: "50+" },
-  { label: "Compliance Rate", value: "99.8%" },
+  { label: "Customers Worldwide", value: "120" },
+  { label: "Years of Experience", value: "9" },
+  { label: "Industries Served", value: "24" },
+  { label: "Compliance Rate", value: "99%" },
 ];
 
 export default function AML() {
@@ -334,7 +334,7 @@ export default function AML() {
               Safeguard your business from financial crime
             </h2>
             <p className="text-lg text-muted-foreground">
-              With Ontrax Compliance & Risk Management Ltd as your trusted
+              With Infinity Auditing & Accounting Pvt Ltd as your trusted
               partner, navigate complex AML regulations with confidence.
             </p>
           </div>
