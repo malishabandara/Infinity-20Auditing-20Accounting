@@ -91,7 +91,7 @@ export default function AML() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              "url('https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=1600')",
+              "url('/burj.jfif')",
           }}
         />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.22),transparent_60%),radial-gradient(circle_at_bottom_right,_rgba(7,23,44,0.55),transparent_70%)]" />
