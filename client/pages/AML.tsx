@@ -121,11 +121,11 @@ export default function AML() {
               </Button>
             </div>
             <div className="mx-auto w-full max-w-2xl">
-              <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/20 text-left">
-                <p className="text-xs uppercase tracking-[0.25em] text-white/25 text-center">
+              <div className="rounded-2xl bg-white/20 p-6 ring-1 ring-white/20 text-left">
+                <p className="text-xs uppercase tracking-[0.25em] text-white/95 text-center">
                   Key Benefits
                 </p>
-                <ul className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 text-sm text-white/35">
+                <ul className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 text-sm text-white/95">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="size-4 flex-shrink-0 mt-0.5" />
                     <span>Safeguard from financial crime</span>
