@@ -94,7 +94,8 @@ export default function AML() {
               "url('/burjk.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.22),transparent_60%),radial-gradient(circle_at_bottom_right,_rgba(7,23,44,0.55),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.05),transparent_60%),radial-gradient(circle_at_bottom_right,_rgba(7,23,44,0.85),transparent_70%)]" />
+        <div className="absolute inset-0 bg-black/40" />
         <div className="relative container grid min-h-[72vh] items-center gap-8 sm:gap-10 lg:gap-12 py-16 sm:py-20 lg:py-24">
           <div className="mx-auto max-w-3xl space-y-8 text-center">
             <span className="mx-auto inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-white/90 ring-1 ring-white/40">
