@@ -5,8 +5,8 @@ import { toast } from "sonner";
 const contactChannels = [
   {
     label: "Phone",
-    value: "+971 58 189 7800",
-    href: "tel:+971581897800",
+    value: "+971 55 623 0447",
+    href: "tel:+971556230447",
     icon: Phone,
   },
   {
@@ -18,7 +18,7 @@ const contactChannels = [
   {
     label: "WhatsApp",
     value: "Chat instantly",
-    href: "https://wa.me/971581897800",
+    href: "https://wa.me/971556230447",
     icon: MessageCircle,
   },
 ];
@@ -45,7 +45,7 @@ const Contact = () => {
 
       // Encode message for URL
       const encodedMessage = encodeURIComponent(whatsappMessage);
-      const whatsappUrl = `https://wa.me/971581897800?text=${encodedMessage}`;
+      const whatsappUrl = `https://wa.me/971556230447?text=${encodedMessage}`;
 
       // Open WhatsApp with the pre-filled message
       window.open(whatsappUrl, "_blank");
@@ -114,7 +114,6 @@ const Contact = () => {
                     type="text"
                     name="fullName"
                     required
-                    placeholder="Jane Ahmed"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   />
                 </label>
@@ -123,7 +122,6 @@ const Contact = () => {
                   <input
                     type="text"
                     name="company"
-                    placeholder="Infinity Ventures"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   />
                 </label>
@@ -135,7 +133,6 @@ const Contact = () => {
                     type="email"
                     name="email"
                     required
-                    placeholder="name@company.com"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   />
                 </label>
@@ -144,7 +141,6 @@ const Contact = () => {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="+971 50 000 0000"
                     className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   />
                 </label>
@@ -171,7 +167,6 @@ const Contact = () => {
                 <textarea
                   name="message"
                   rows={5}
-                  placeholder="Share your current objectives, timelines, or challenges."
                   className="rounded-lg border border-border bg-transparent px-4 py-3 text-sm text-foreground shadow-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30"
                   required
                 />

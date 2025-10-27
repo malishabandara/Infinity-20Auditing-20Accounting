@@ -76,17 +76,18 @@ export const SiteFooter = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 size-4" />
                 <span>
-                  Level 02, Bldg. 04, Bay Square,<br />
+                  Level 02, Bldg. 04, Bay Square,
+                  <br />
                   Business Bay, Dubai, UAE
                 </span>
               </li>
               <li>
                 <a
-                  href="tel:+971581897800"
+                  href="tel:+971556230447"
                   className="flex items-center gap-3 text-white/85 transition hover:text-white"
                 >
                   <Phone className="size-4" />
-                  +971 58 189 7800
+                  +971 55 623 0447
                 </a>
               </li>
               <li>
@@ -100,7 +101,7 @@ export const SiteFooter = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/971581897800"
+                  href="https://wa.me/971556230447"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-3 text-white/85 transition hover:text-white"
@@ -119,8 +120,8 @@ export const SiteFooter = () => {
         <div className="border-t border-white/10">
           <div className="container flex flex-col gap-4 py-6 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              © {new Date().getFullYear()} Infinity Auditing & Accounting
-              All rights reserved.
+              © {new Date().getFullYear()} Infinity Auditing & Accounting All
+              rights reserved.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <span>ISO 9001 Certified</span>

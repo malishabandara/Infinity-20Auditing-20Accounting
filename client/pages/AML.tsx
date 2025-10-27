@@ -90,8 +90,7 @@ export default function AML() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage:
-              "url('/burjk.jpg')",
+            backgroundImage: "url('/burjk.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.05),transparent_60%),radial-gradient(circle_at_bottom_right,_rgba(7,23,44,0.85),transparent_70%)]" />
@@ -106,9 +105,9 @@ export default function AML() {
                 Your Trusted Patner in AML Risk Management
               </h1>
               <p className="max-w-xl mx-auto text-lg text-white/85 text-center">
-                We deliver tailored Anti-Money Laundering compliance solutions that protect your
-                business, ensure regulatory alignment, and foster long-term
-                credibility.
+                We deliver tailored Anti-Money Laundering compliance solutions
+                that protect your business, ensure regulatory alignment, and
+                foster long-term credibility.
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center justify-center">
@@ -229,7 +228,9 @@ export default function AML() {
                 className="rounded-[24px] border border-white/15 bg-white/10 p-8 backdrop-blur-sm"
               >
                 <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
-                <p className="text-white/85 leading-relaxed">{item.description}</p>
+                <p className="text-white/85 leading-relaxed">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
@@ -248,9 +249,9 @@ export default function AML() {
           <p className="mx-auto max-w-3xl text-lg text-muted-foreground">
             In today's fast-changing regulatory environment, Anti-Money
             Laundering (AML) compliance is not just a requirement—it's a
-            safeguard for your business. We deliver customized, cutting-edge
-            AML compliance solutions that protect your organization from
-            financial risks, legal penalties, and reputational damage.
+            safeguard for your business. We deliver customized, cutting-edge AML
+            compliance solutions that protect your organization from financial
+            risks, legal penalties, and reputational damage.
           </p>
         </div>
         <div className="grid gap-8 lg:grid-cols-2">
@@ -263,8 +264,8 @@ export default function AML() {
                 Financial Institutions
               </h3>
               <p className="text-muted-foreground">
-                Comprehensive AML solutions tailored for banks, investment firms,
-                and payment processors.
+                Comprehensive AML solutions tailored for banks, investment
+                firms, and payment processors.
               </p>
             </div>
             <div className="rounded-[24px] border border-border/70 bg-card p-8 shadow-soft">
@@ -275,8 +276,8 @@ export default function AML() {
                 Crypto Businesses
               </h3>
               <p className="text-muted-foreground">
-                Specialized compliance solutions for cryptocurrency exchanges and
-                digital asset platforms.
+                Specialized compliance solutions for cryptocurrency exchanges
+                and digital asset platforms.
               </p>
             </div>
             <div className="rounded-[24px] border border-border/70 bg-card p-8 shadow-soft">
@@ -343,10 +344,10 @@ export default function AML() {
               <Link to="/contact">Schedule AML Assessment</Link>
             </Button>
             <a
-              href="tel:+971581897800"
+              href="tel:+971556230447"
               className="text-sm font-semibold text-primary hover:text-primary/80"
             >
-              Call +971 58 189 7800
+              Call +971 55 623 0447
             </a>
           </div>
         </div>
