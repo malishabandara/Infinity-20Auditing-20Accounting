@@ -57,6 +57,15 @@ export const SiteHeader = () => {
         <div className="hidden items-center gap-3 lg:flex">
           <Button variant="outline" asChild>
             <a
+              href="https://tax.gov.ae/en/media.centre/news.aspx"
+              target="_blank"
+              rel="noreferrer"
+            >
+              FTA Updates
+            </a>
+          </Button>
+          <Button variant="outline" asChild>
+            <a
               href="https://wa.me/971556230447"
               target="_blank"
               rel="noreferrer"
