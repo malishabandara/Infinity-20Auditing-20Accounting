@@ -48,26 +48,6 @@ export const SiteFooter = () => {
               UAE. We combine rigorous audit standards with proactive advisory
               to keep your business a step ahead.
             </p>
-            <div className="flex items-center gap-4">
-              <a
-                href="https://www.instagram.com/infinity_auditing?igsh=MWZweDV5bnplcW04Mw=="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center rounded-full bg-white/10 p-2 text-white/80 transition hover:bg-white/20 hover:text-white"
-                aria-label="Follow us on Instagram"
-              >
-                <Instagram className="size-5" />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/infinity-auditing-accounting/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center rounded-full bg-white/10 p-2 text-white/80 transition hover:bg-white/20 hover:text-white"
-                aria-label="Connect with us on LinkedIn"
-              >
-                <Linkedin className="size-5" />
-              </a>
-            </div>
           </div>
           <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-widest text-white/70">
@@ -143,6 +123,26 @@ export const SiteFooter = () => {
                 Monday – Friday: 9:00 AM – 6:00 PM
               </li>
             </ul>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://www.instagram.com/infinity_auditing?igsh=MWZweDV5bnplcW04Mw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center rounded-full bg-white/10 p-2 text-white/80 transition hover:bg-white/20 hover:text-white"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram className="size-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/infinity-auditing-accounting/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center rounded-full bg-white/10 p-2 text-white/80 transition hover:bg-white/20 hover:text-white"
+                aria-label="Connect with us on LinkedIn"
+              >
+                <Linkedin className="size-5" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="border-t border-white/10">
