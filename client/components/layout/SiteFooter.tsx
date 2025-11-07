@@ -91,11 +91,11 @@ export const SiteFooter = () => {
               </li>
               <li>
                 <a
-                  href="tel:+971556230447"
+                  href="tel:+971545628525"
                   className="flex items-center gap-3 text-white/85 transition hover:text-white"
                 >
                   <Phone className="size-4" />
-                  +971 55 623 0447
+                  +971 54 562 8525
                 </a>
               </li>
               <li>

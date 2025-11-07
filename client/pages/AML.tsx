@@ -90,7 +90,7 @@ export default function AML() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/burjk.jpg')",
+            backgroundImage: "url('/burjk.jpeg')",
           }}
         />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.05),transparent_60%),radial-gradient(circle_at_bottom_right,_rgba(7,23,44,0.85),transparent_70%)]" />
@@ -344,10 +344,10 @@ export default function AML() {
               <Link to="/contact">Schedule AML Assessment</Link>
             </Button>
             <a
-              href="tel:+971556230447"
+              href="tel:+971545628525"
               className="text-sm font-semibold text-primary hover:text-primary/80"
             >
-              Call +971 55 623 0447
+              Call +971 54 562 8525
             </a>
           </div>
         </div>

@@ -5,8 +5,8 @@ import { toast } from "sonner";
 const contactChannels = [
   {
     label: "Phone",
-    value: "+971 55 623 0447",
-    href: "tel:+971556230447",
+    value: "+971 54 562 8525",
+    href: "tel:+971545628525",
     icon: Phone,
   },
   {

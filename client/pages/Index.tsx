@@ -379,10 +379,10 @@ export default function Index() {
               <Link to="/contact">Book Strategy Call</Link>
             </Button>
             <a
-              href="tel:+971556230447"
+              href="tel:+971545628525"
               className="text-sm font-semibold text-primary hover:text-primary/80"
             >
-              Prefer to speak now? Call +971 55 623 0447
+              Prefer to speak now? Call +971 54 562 8525
             </a>
           </div>
         </div>

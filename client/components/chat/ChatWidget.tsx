@@ -17,7 +17,7 @@ function siteAwareReply(input: string): string {
   const text = input.toLowerCase();
 
   if (/consult|book|schedule|call|meeting/.test(text)) {
-    return "You can schedule a consultation anytime. Visit the Contact page or use 'Schedule Consultation' on the home hero. We also offer WhatsApp advisory at +971556230447.";
+    return "You can schedule a consultation anytime. Visit the Contact page or use 'Schedule Consultation' on the home hero. We also offer WhatsApp advisory at +971545628525.";
   }
 
   if (
