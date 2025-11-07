@@ -18,7 +18,7 @@ const contactChannels = [
   {
     label: "WhatsApp",
     value: "Chat instantly",
-    href: "https://wa.me/971556230447",
+    href: "https://wa.me/971545628525",
     icon: MessageCircle,
   },
 ];
@@ -45,7 +45,7 @@ const Contact = () => {
 
       // Encode message for URL
       const encodedMessage = encodeURIComponent(whatsappMessage);
-      const whatsappUrl = `https://wa.me/971556230447?text=${encodedMessage}`;
+      const whatsappUrl = `https://wa.me/971545628525?text=${encodedMessage}`;
 
       // Open WhatsApp with the pre-filled message
       window.open(whatsappUrl, "_blank");

@@ -66,7 +66,7 @@ export const SiteHeader = () => {
           </Button>
           <Button variant="outline" asChild>
             <a
-              href="https://wa.me/971556230447"
+              href="https://wa.me/971545628525"
               target="_blank"
               rel="noreferrer"
             >
@@ -124,7 +124,7 @@ export const SiteHeader = () => {
             </Button>
             <Button variant="outline" asChild className="justify-center">
               <a
-                href="https://wa.me/971556230447"
+                href="https://wa.me/971545628525"
                 target="_blank"
                 rel="noreferrer"
               >

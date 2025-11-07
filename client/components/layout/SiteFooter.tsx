@@ -109,7 +109,7 @@ export const SiteFooter = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/971556230447"
+                  href="https://wa.me/971545628525"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-white/85 transition hover:text-white"
